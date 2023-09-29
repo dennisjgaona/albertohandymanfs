@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import LangButton from "./LangButton";
+import { ContextLang } from "./Layout";
+
 export default function Header() {
   const activeStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
     color: "#161616",
   };
+
+  const { lang } = useContext(ContextLang);
 
   return (
     <header>
@@ -17,31 +22,29 @@ export default function Header() {
           to="/"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          Home
+          {lang ? "Home" : "Casa"}
         </NavLink>
         <NavLink
           to="/services"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          HandyMan Services
+          {lang ? "HandyMan Services" : "HandyMan Servicios"}
         </NavLink>
         <NavLink
           to="/projects"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          Projects
+          {lang ? "Projects" : "Proyectos"}
         </NavLink>
         <NavLink
           to="/about"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          About
+          {lang ? "About" : "Informacion"}
         </NavLink>
-        {/* <Link to="login" className="login-link">
-          <img src={imageUrl} className="login-icon" />
-        </Link> */}
-        <button>Request Service</button>
-        <button>Contact</button>
+        <LangButton />
+        <button>{lang ? "Request Service" : "Requesiciona Servicio"}</button>
+        <button>{lang ? "Contact" : "Contactar"}</button>
       </nav>
     </header>
   );

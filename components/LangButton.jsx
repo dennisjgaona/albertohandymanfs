@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "./ToggleLang.css";
+import React, { useContext } from "react";
+import "./LangButton.css";
+import { ContextLang } from "./Layout";
 
-function ToggleLang(props) {
-  const [toggle, setToggle] = useState(false);
+export default function LangButton() {
+  const { lang, setLang } = useContext(ContextLang);
 
   function handleChange() {
-    setToggle(!toggle);
-    props.pullLang(toggle);
+    setLang(!lang);
     //console.log(toggle);
   }
 
@@ -16,7 +16,7 @@ function ToggleLang(props) {
 
   return (
     <div>
-      <div className={`radio ${toggle ? "off" : "on"}`}>
+      <div className={`radio ${!lang ? "off" : "on"}`}>
         <div className="wrap">
           <input type="radio" id="on" name="radio" />
           <label for="on" onClick={handleChange}>
@@ -34,4 +34,3 @@ function ToggleLang(props) {
     </div>
   );
 }
-export default ToggleLang;
