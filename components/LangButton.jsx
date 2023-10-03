@@ -10,10 +10,6 @@ export default function LangButton() {
     //console.log(toggle);
   }
 
-  //   function handleSPClick() {
-  //     setToggle(true);
-  //   }
-
   return (
     <div>
       <div className={`radio ${!lang ? "off" : "on"}`}>

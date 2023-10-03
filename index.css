@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #050401;
   background-color: #242424;
 
   font-synthesis: none;
@@ -22,7 +22,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff7ed;
+  background-color: #303036;
   font-family: "Inter", sans-serif;
 }
 
@@ -51,10 +51,11 @@ header {
   display: flex;
   align-items: center;
   padding-block: 10px;
+  background-color: #30bced;
 }
 
 header .site-logo {
-  color: black;
+  color: #fc5130;
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
@@ -69,7 +70,7 @@ header a {
 }
 
 header a:hover {
-  color: #161616;
+  color: #fc5130;
   text-decoration: underline;
 }
 
@@ -101,4 +102,32 @@ footer {
   align-items: center;
   margin-top: auto;
   font-weight: 500;
+}
+
+.hero {
+  display: grid;
+  background-image: url("./src/assets/dallasSkylineVector.jpg");
+
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.hero-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  color: #30bced;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text h2 {
+  color: #303036;
+  justify-content: center;
+  align-items: center;
 }
