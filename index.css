@@ -20,9 +20,10 @@
 
 html,
 body {
-  margin: 0;
+  text-align: center;
+  margin: auto;
   padding: 0;
-  background-color: #303036;
+  background-color: #ccccff;
   font-family: "Inter", sans-serif;
 }
 
@@ -103,7 +104,7 @@ footer {
   margin-top: auto;
   font-weight: 500;
 }
-
+/* HERO CSS */
 .hero {
   display: grid;
   background-image: url("./src/assets/dallasSkylineVector.jpg");
@@ -116,6 +117,7 @@ footer {
 }
 
 .hero-text {
+  padding-top: 10%;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -130,4 +132,15 @@ footer {
   color: #303036;
   justify-content: center;
   align-items: center;
+}
+.hero-button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+/* VALIDATION HEADER CSS */
+.validation {
+  display: flex;
+  justify-content: space-around;
 }
