@@ -1,29 +1,10 @@
 import React from "react";
 import Button from "../components/Button";
 import ValidationComponent from "../components/ValidationComponent";
+import ServiceTile from "../components/ServiceTile";
+import { validationComp, serviceComp } from "../utils";
 
 export default function Home() {
-  const validationComp = [
-    {
-      title: "Lifelong Career Professional",
-      subTitle: "In Construction Business",
-      imgSrc:
-        "https://img.icons8.com/external-wanicon-lineal-color-wanicon/256/external-construction-construction-wanicon-lineal-color-wanicon-1.png",
-    },
-    {
-      title: "Certified NextDoor Neighbor",
-      subTitle: "from Excellent Customer Service",
-      imgSrc:
-        "https://img.icons8.com/external-thin-kawalan-studio/96/external-nextdoor-social-media-thin-kawalan-studio.png",
-    },
-    {
-      title: "100+",
-      subTitle: "Jobs Completed",
-      imgSrc:
-        "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-construction-emergency-service-flaticons-lineal-color-flat-icons.png",
-    },
-  ];
-
   return (
     <>
       <div className="hero">
@@ -48,8 +29,21 @@ export default function Home() {
         })}
       </div>
       <div className="services">
-        <div>
-          <h2>all services go here! </h2>
+        <div className="services-intro">
+          <h2>Alberto's Handyman Services </h2>
+          <h3>Explore our full menu of Handyman Services</h3>
+        </div>
+        <div className="services-grid">
+          {serviceComp.map((component) => {
+            return (
+              <ServiceTile
+                title={component.title}
+                description={component.description}
+                iconName={component.iconName}
+                btnPath={component.btnPath}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="whyUs">

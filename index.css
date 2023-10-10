@@ -144,3 +144,9 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
+.services-grid {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+}

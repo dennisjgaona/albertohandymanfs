@@ -32,3 +32,5 @@ function App() {
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 //npm run dev (open dev server)
 //pallete https://coolors.co/30bced-303036-fffaff-fc5130-050401
+// git add .
+//git commit -m "message..."
