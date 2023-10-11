@@ -144,9 +144,33 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-
+/* VALIDATION HEADER CSS */
+/* *******SERVICES******** */
+.services {
+  background-color: antiquewhite;
+}
 .services-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 50px;
+}
+/* *******SERVICES******** */
+.whyUs {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.whyUs-left {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.whyUs-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.whyUsTile-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
