@@ -151,3 +151,70 @@ export const reviewComp = [
     name: "Emily Carter",
   },
 ];
+
+export const tempGallery = [
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/d4/01/d401956f3dbc0c4d5f939584cc2ea8db.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/a6/00/a60039fc2aceeeaaaec1dcecb82d74ab.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/7c/7a/7c7adb63cedf614ca27024df5032b6e7.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/69/ab/69ab158d1c3d37961d49b6478d7c749a.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/43/fd/43fd7ad9b2b98bdfef3e99950a78ab18.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/2d/be/2dbee170a6e55c12b0bc6242db32cac0.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/16/80/168041e899209df96e37a57271dc127f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/3d/7e/3d7ee961962e5f85e529324c0bb1f83e.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/f7/8d/f78d111c6186913e3d3ca099760bdd37.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/5a/8e/5a8eda4127cfc6add83b75ae1755fa6b.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/bf/40/bf403e3bb37e3e4fef0c01081ff34620.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/c1/1e/c11eb813ded8bc7a19611e91b48d8d49.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/fe/f1/fef101d58d6c89279d944fa4516f2370.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/ca/d9/cad993d63febbf4e2f19e52f428946fa.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/91/1e/911e6e98444b477f4e1732e6791ca11f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+  {
+    imgSrc:
+      "https://us1-photo.nextdoor.com/business_gallery/54/33/5433094d4b9bd2bd4a5c36b8f72c306f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+  },
+];

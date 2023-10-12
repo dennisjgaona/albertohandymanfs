@@ -4,7 +4,13 @@ import ValidationComponent from "../components/ValidationComponent";
 import ServiceTile from "../components/ServiceTile";
 import WhyUsTile from "../components/WhyUsTile";
 import ReviewTile from "../components/ReviewTile";
-import { validationComp, serviceComp, whyUsComp, reviewComp } from "../utils";
+import {
+  validationComp,
+  serviceComp,
+  whyUsComp,
+  reviewComp,
+  tempGallery,
+} from "../utils";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -122,6 +128,27 @@ export default function Home() {
       </div>
       <div className="projects">
         <h2>here is a slideshow of all of our recent work! </h2>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={false} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          {tempGallery.map((component) => {
+            return <img src={component.imgSrc} alt="gallery-image"></img>;
+          })}
+        </Carousel>
       </div>
       <div className="calltoaction">
         <h2>Final call to action! </h2>
@@ -132,3 +159,6 @@ export default function Home() {
 
 //Carousel docs;
 //https://www.npmjs.com/package/react-multi-carousel
+
+//handyman nextdoor direct link
+//https://nextdoor.com/pages/albertos-handyman-co-dallas-tx/?init_source=search&query=alberto%20handy%20man
