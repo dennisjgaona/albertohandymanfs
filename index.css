@@ -22,8 +22,8 @@ html,
 body {
   text-align: center;
   margin: auto;
-  padding: 0;
-  background-color: #ccccff;
+  padding: auto 100px;
+  background-color: #cecedf;
   font-family: "Inter", sans-serif;
 }
 
@@ -104,6 +104,9 @@ footer {
   margin-top: auto;
   font-weight: 500;
 }
+button {
+  background-color: aliceblue;
+}
 /* HERO CSS */
 .hero {
   display: grid;
@@ -173,4 +176,33 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.projects {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+.projects-left {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #30bced;
+}
+
+.projects-right {
+  width: 100%;
+}
+/* .custom-dot-list-style > li > button {
+  background: rgb(124, 121, 121);
+} */
+
+.projects-carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-multi-carousel-dot--active > button {
+  background: white;
 }

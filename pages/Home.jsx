@@ -105,7 +105,7 @@ export default function Home() {
             ssr={false} // means to render carousel on server-side.
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={1000}
+            autoPlaySpeed={3000}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
@@ -127,31 +127,42 @@ export default function Home() {
         </div>
       </div>
       <div className="projects">
-        <h2>here is a slideshow of all of our recent work! </h2>
-        <Carousel
-          swipeable={false}
-          draggable={false}
-          showDots={true}
-          responsive={responsive}
-          ssr={false} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {tempGallery.map((component) => {
-            return <img src={component.imgSrc} alt="gallery-image"></img>;
-          })}
-        </Carousel>
+        <div className="projects-left">
+          <h2>here is a slideshow of all of our recent work! </h2>
+        </div>
+        <div className="projects-right">
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            ssr={false} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={false}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="projects-right"
+            dotListClass="custom-dot-list-style"
+            itemClass="projects-carousel-item"
+          >
+            {tempGallery.map((component) => {
+              return (
+                <img
+                  src={component.imgSrc}
+                  style={{ width: "200px" }}
+                  alt="gallery-image"
+                />
+              );
+            })}
+          </Carousel>
+        </div>
       </div>
       <div className="calltoaction">
-        <h2>Final call to action! </h2>
+        <h2>Ready to start your project? </h2>
+        <h3>Give Alberto's HandyMan a call for a free consultation</h3>
+        <Button>Book A HandyMan</Button>
       </div>
     </>
   );

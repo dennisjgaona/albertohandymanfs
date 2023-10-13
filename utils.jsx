@@ -217,4 +217,8 @@ export const tempGallery = [
     imgSrc:
       "https://us1-photo.nextdoor.com/business_gallery/54/33/5433094d4b9bd2bd4a5c36b8f72c306f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
   },
+  {
+    imgSrc:
+      "https://media.istockphoto.com/id/1492434373/vector/illustration-cartoon-style-of-repairman-standing-with-arms-crossed-confident-posture-wearing.jpg?s=612x612&w=0&k=20&c=VtkFLJr7bHG2Ncqbas-9Va64fPQca4sw_prIqeXoKXg=",
+  },
 ];
