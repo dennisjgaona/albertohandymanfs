@@ -80,6 +80,51 @@ export const serviceComp = [
   },
 ];
 
+export const serviceCompLayout = [
+  {
+    iconName: <AiOutlineFormatPainter />,
+    title: "Painting & Drywall",
+    description:
+      "We're born drywallers and painters. We replace or repair damaged drywall (including water damage) and professionally apply your choice of paint, leaving you with a look you will love.",
+    btnPath: "/services/painting-drywall",
+  },
+  {
+    iconName: <BsBricks />,
+    title: "Caulking & Grout",
+    description:
+      "When caulking and grout wears, water damage and mold can occur. We'll strip out the old and apply new caulking and grout to protect your cabinets, tile, counters, and other surfaces.",
+    btnPath: "/services/caulk-grout",
+  },
+  {
+    iconName: <MdOutlineWindow />,
+    title: "Tile & Backsplashes",
+    description:
+      "Bathroom and kitchen tiles installed improperly can be uneven and non-durable. We install tile the right way, giving you results you'll love for years. We've got you covered with backsplashes too!",
+    btnPath: "/services/tile-backsplash",
+  },
+  {
+    iconName: <BsDoorOpen />,
+    title: "Doors & Locks",
+    description:
+      "Properly installed doors provide you with a safer barrier of entry to your home, reduce heating and cooling costs, and more. We install locks too! ",
+    btnPath: "/services/doors-locks",
+  },
+  {
+    iconName: <LiaToiletSolid />,
+    title: "Plumbing",
+    description:
+      "Even small plumbing issues can cause water damage over time. We can fix anything that's leaking, or install a new faucet, sink, or toilet.",
+    btnPath: "/services/plumbing",
+  },
+  {
+    iconName: <HiOutlineWrenchScrewdriver />,
+    title: "Furniture Assembly",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/furniture-assy",
+  },
+];
+
 export const whyUsComp = [
   {
     description: "We arrive on time",
