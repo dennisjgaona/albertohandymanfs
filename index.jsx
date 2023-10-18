@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
-import ServicesLayout from "./components/ServicesLayout";
+import ServicesDetail from "./pages/ServicesDetail";
+import ServicesMain from "./components/ServicesMain";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -18,9 +18,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="services" element={<ServicesLayout />}>
-        <Route path="/services/:id" element={<Services />} />
-      </Route>
+      <Route path="services" element={<ServicesMain />} />
+      <Route path="/services/:id" element={<ServicesDetail />} />
+
       <Route path="projects" element={<Projects />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />

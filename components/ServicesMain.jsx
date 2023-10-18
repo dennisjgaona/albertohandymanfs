@@ -1,8 +1,8 @@
 import React from "react";
 import { serviceCompLayout } from "../utils";
-import { Outlet } from "react-router-dom";
+//import { Outlet } from "react-router-dom";
 import ServicePageTile from "./ServicePageTile";
-export default function ServicesLayout() {
+export default function ServicesMain() {
   return (
     <>
       <div className="servicesPage-hero">
@@ -49,12 +49,10 @@ export default function ServicesLayout() {
             <ServicePageTile
               title={component.title}
               iconName={component.iconName}
-              btnPath={component.btnPath}
             />
           );
         })}
       </div>
-      <Outlet />
     </>
   );
 }

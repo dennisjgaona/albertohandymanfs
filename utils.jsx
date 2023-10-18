@@ -86,7 +86,7 @@ export const serviceCompLayout = [
     title: "Painting & Drywall",
     description:
       "We're born drywallers and painters. We replace or repair damaged drywall (including water damage) and professionally apply your choice of paint, leaving you with a look you will love.",
-    btnPath: "/services/painting-drywall",
+    btnPath: "/painting-drywall",
   },
   {
     iconName: <BsBricks />,
@@ -265,5 +265,17 @@ export const tempGallery = [
   {
     imgSrc:
       "https://media.istockphoto.com/id/1492434373/vector/illustration-cartoon-style-of-repairman-standing-with-arms-crossed-confident-posture-wearing.jpg?s=612x612&w=0&k=20&c=VtkFLJr7bHG2Ncqbas-9Va64fPQca4sw_prIqeXoKXg=",
+  },
+];
+
+export const servicesPagesInfo = [
+  {
+    id: "painting-drywall",
+    heroName: "Painting and Drywall Repair",
+    mainTitle: "Professional painting & drywall replacement",
+    mainDescription:
+      "A fresh coat of paint on a wall, when professionally applied, can make a world of difference when it comes to the look and feel of a room. {\n} Chicago Handy has the knowledge and experience needed to provide you with great results at affordable prices.But no matter how good we are at painting, a wall with holes or wear and tear won't look too good even with a fresh paint job. That's why we also take the time to repair your drywall beforehand to offer the best results possible. And that includes repairing water damaged drywall.{\n}Wet drywall loses its structural integrity and becomes weak, causing holes and other issues. If you have water damage in your drywall, we'll remove the damaged areas and replace with new drywall. We professionally apply a joining compound for a seamless look and when painted, you're left with your wall looking brand new.",
+    imgSrc:
+      "https://chicagohandy.com/wp-content/uploads/2020/07/painting-contractors-scaled.jpg",
   },
 ];

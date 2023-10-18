@@ -45,8 +45,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 header {
@@ -159,6 +159,26 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 50px;
+}
+/* SERVICE TILE */
+.schover {
+  box-shadow: 10px 10px lightblue;
+  color: #fc5130;
+}
+/* .scnormal {
+
+} */
+.service-tile {
+  display: grid;
+
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.services-allServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 /* *******SERVICES******** */
 .whyUs {

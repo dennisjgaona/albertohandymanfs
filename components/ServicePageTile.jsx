@@ -15,12 +15,14 @@ export default function ServicePageTile({ iconName, title, btnPath }) {
   );
 
   return (
-    <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      className={isHovered ? "service-tile-hover" : "service-tile-normal"}
-    >
-      {normalView}
-    </div>
+    <Link to="/services/painting-drywall">
+      <div
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className={`service-tile ${isHovered ? "schover" : ""}`}
+      >
+        {normalView}
+      </div>
+    </Link>
   );
 }
