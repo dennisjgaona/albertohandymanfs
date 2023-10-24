@@ -86,7 +86,7 @@ export const serviceCompLayout = [
     title: "Painting & Drywall",
     description:
       "We're born drywallers and painters. We replace or repair damaged drywall (including water damage) and professionally apply your choice of paint, leaving you with a look you will love.",
-    btnPath: "/painting-drywall",
+    btnPath: "/services/painting-drywall",
   },
   {
     iconName: <BsBricks />,
@@ -273,9 +273,120 @@ export const servicesPagesInfo = [
     id: "painting-drywall",
     heroName: "Painting and Drywall Repair",
     mainTitle: "Professional painting & drywall replacement",
-    mainDescription:
-      "A fresh coat of paint on a wall, when professionally applied, can make a world of difference when it comes to the look and feel of a room. {\n} Chicago Handy has the knowledge and experience needed to provide you with great results at affordable prices.But no matter how good we are at painting, a wall with holes or wear and tear won't look too good even with a fresh paint job. That's why we also take the time to repair your drywall beforehand to offer the best results possible. And that includes repairing water damaged drywall.{\n}Wet drywall loses its structural integrity and becomes weak, causing holes and other issues. If you have water damage in your drywall, we'll remove the damaged areas and replace with new drywall. We professionally apply a joining compound for a seamless look and when painted, you're left with your wall looking brand new.",
+    mainDescription: `A fresh coat of paint on a wall, when professionally applied, can make a world of difference when it comes to the look and feel of a room. 
+      
+      Chicago Handy has the knowledge and experience needed to provide you with great results at affordable prices.But no matter how good we are at painting, a wall with holes or wear and tear won't look too good even with a fresh paint job. That's why we also take the time to repair your drywall beforehand to offer the best results possible. And that includes repairing water damaged drywall.
+      
+      Wet drywall loses its structural integrity and becomes weak, causing holes and other issues. If you have water damage in your drywall, we'll remove the damaged areas and replace with new drywall. We professionally apply a joining compound for a seamless look and when painted, you're left with your wall looking brand new.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/painting-contractors-scaled.jpg",
+  },
+  {
+    id: "caulk-grout",
+    heroName: "Caulking & Grout Repair",
+    mainTitle: "Grout repair and caulking replacement",
+    mainDescription: `Grout and caulking are often looked past when it comes to thinking about repairs, but they serve very important purposes.
+
+A properly sealed countertop and grouted floor can prevent water damage by creating a seal.
+
+And sealing windows and doors can help save money on your heating and cooling bills!
+
+Over time (or with improper installation), caulking and grout can degrade and will need to be replaced to maintain their seal.
+
+Chicago Handy has years of experience ensuring your caulking and grout has a proper seal, preserving your countertops, tile floors, and more.`,
+    imgSrc:
+      "https://chicagohandy.com/wp-content/uploads/2020/07/Grout-repair-and-caulking-replacement.jpg",
+  },
+  {
+    id: "tile-backsplash",
+    heroName: "Bathroom Tile & Kitchen Backsplashes",
+    mainTitle: "Bathroom tile & kitchen backsplash installation",
+    mainDescription: `Having tile installed during home remodeling (such as part of a kitchen remodel or bathroom update) is a great way to add value and appeal to your home.
+
+Not only is properly installed tile durable, it is easy to clean, easy to maintain and offers design flexibility that other wall and flooring options simply do not.
+
+However, improperly installed tile can be uneven and not very durable.
+
+That's why it's important to have professionals, like the Chicago Handy team, install your tile.
+
+And we also install kitchen backsplashes to help add a unique aesthetic touch to your kitchen!
+
+Whatever the tile or backsplash project, Chicago Handy can install everything professionally and in a timely manner.`,
+    imgSrc:
+      "https://chicagohandy.com/wp-content/uploads/2020/05/Norbert-Sienko-Powder-room-tile-installation.jpg",
+  },
+  {
+    id: "doors-locks",
+    heroName: "Door Repair & Lock Installation",
+    mainTitle: "We repair and install doors & locks",
+    mainDescription: `Doors offer many different benefits to your household; privacy, security, energy savings, and more.
+
+And an improperly installed door can not only be a little annoying to use, but can also be much less safe and allow air to escape, costing you more money.
+
+Chicago Handy has many years experience installing doors to improve the aesthetics of your home while also allowing you to take full advantage of the benefits of doors.
+
+That goes for locks too!
+
+Locks are a huge part of keeping your house safe and secure, so we take the time to make sure they are installed correctly.
+
+Whether it's an exterior door to update the look of your house or an interior door to replace an old one, give Chicago Handy a call to get it done right!`,
+    imgSrc:
+      "https://chicagohandy.com/wp-content/uploads/2020/07/house-1407562_1920.jpg",
+  },
+  {
+    id: "plumbing",
+    heroName: "Plumbing & Garbage Disposal Repair ",
+    mainTitle: "Professional plumbing services",
+    mainDescription: `Having a leak or other light plumbing issues can not only waste water, but they can cause water damage to nearby countertops, walls, and more, costing you thousands of dollars.
+
+When your pipes are leaking, you need a toilet repaired or replaced, you need your garbage disposal repaired, or any other plumbing issue, call Chicago Handy.
+
+We have many years of experience working with plumbing systems and are happy to help fix your plumbing issue`,
+    imgSrc:
+      "https://chicagohandy.com/wp-content/uploads/2020/07/plumbing-840835_1920.jpg",
+  },
+  {
+    id: "furniture-assy",
+    heroName: "Furniture Assembly Assistance",
+    mainTitle: "We help out with complex or heavy furniture assembly",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    imgSrc:
+      "https://www.leatherman.com/on/demandware.static/-/Library-Sites-leatherman-shared2020/default/dw7a20553f/blog/home/diy/7-hacks-for-assembling-furniture/AssemblingFurniture-full.jpg",
+  },
+  {
+    id: "water-damage-repair",
+    heroName: "Water Damage Repair",
+    mainTitle: "Replace water damaged walls, sheetrock, carpet, etc.",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Sed tempus urna et pharetra pharetra massa massa. Turpis in eu mi bibendum neque egestas congue. Sapien pellentesque habitant morbi tristique senectus et. Non enim praesent elementum facilisis. Vulputate eu scelerisque felis imperdiet proin fermentum. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Nec sagittis aliquam malesuada bibendum. Lorem sed risus ultricies tristique nulla aliquet enim. Nisl tincidunt eget nullam non.`,
+    imgSrc: "",
+  },
+  {
+    id: "fireplace-tile-install",
+    heroName: "Fireplace Tile Installation",
+    mainTitle: "We install beautiful fireplace tiles",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nisl rhoncus mattis rhoncus urna neque viverra. Massa enim nec dui nunc mattis enim. Elementum nibh tellus molestie nunc non blandit massa enim nec. Sed euismod nisi porta lorem mollis aliquam ut. A lacus vestibulum sed arcu non odio euismod lacinia. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquam sem fringilla ut morbi tincidunt augue. Ipsum a arcu cursus vitae congue. Nibh praesent tristique magna sit amet purus gravida quis. Cras pulvinar mattis nunc sed blandit libero volutpat. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.`,
+    imgSrc: "",
+  },
+  {
+    id: "leak-repair",
+    heroName: "Leaky Pipes Repair",
+    mainTitle: "We identify and fix leaky pipes",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus vitae. Ultricies mi quis hendrerit dolor magna eget est lorem. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Scelerisque purus semper eget duis at tellus at. Id semper risus in hendrerit gravida. Ornare lectus sit amet est placerat in egestas. Rhoncus mattis rhoncus urna neque viverra justo. Aliquet enim tortor at auctor. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Pharetra pharetra massa massa ultricies mi quis hendrerit. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed lectus vestibulum mattis ullamcorper.`,
+    imgSrc: "",
+  },
+  {
+    id: "carpentry",
+    heroName: "Carpentry",
+    mainTitle: "Get your carpentry needs met with us",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nisl pretium fusce id. Tempor nec feugiat nisl pretium fusce id velit ut. Lorem mollis aliquam ut porttitor leo a. Massa ultricies mi quis hendrerit dolor magna eget est. Feugiat scelerisque varius morbi enim nunc faucibus. Velit euismod in pellentesque massa placerat duis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Magna sit amet purus gravida quis blandit. Fermentum odio eu feugiat pretium. Commodo sed egestas egestas fringilla phasellus faucibus`,
+    imgSrc: "",
+  },
+  {
+    id: "garage-repair-install",
+    heroName: "Garage Door Installs and Repairs",
+    mainTitle:
+      "Automatic and remote control garage door repairs and installations",
+    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Mattis vulputate enim nulla aliquet porttitor lacus. Eget nulla facilisi etiam dignissim diam quis enim. Id eu nisl nunc mi. Id neque aliquam vestibulum morbi blandit cursus risus. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Nunc pulvinar sapien et ligula. Porta lorem mollis aliquam ut porttitor leo.`,
+    imgSrc: "",
   },
 ];

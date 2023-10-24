@@ -228,3 +228,9 @@ button {
 .react-multi-carousel-dot--active > button {
   background: white;
 }
+
+/* SERVICES DETAIL TILE */
+
+.services-detail-paragraph {
+  white-space: pre-wrap;
+}

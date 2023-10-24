@@ -47,8 +47,10 @@ export default function ServicesMain() {
         {serviceCompLayout.map((component) => {
           return (
             <ServicePageTile
+              key={component.title}
               title={component.title}
               iconName={component.iconName}
+              btnPath={component.btnPath}
             />
           );
         })}

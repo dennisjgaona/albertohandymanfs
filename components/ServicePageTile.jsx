@@ -15,7 +15,7 @@ export default function ServicePageTile({ iconName, title, btnPath }) {
   );
 
   return (
-    <Link to="/services/painting-drywall">
+    <Link to={btnPath}>
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
