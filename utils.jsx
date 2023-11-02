@@ -6,13 +6,23 @@ import {
   BsShieldCheck,
 } from "react-icons/bs";
 import { BiBrain } from "react-icons/bi";
-import { MdOutlineWindow } from "react-icons/md";
+import {
+  MdOutlineWindow,
+  MdOutlineFireplace,
+  MdOutlineCarpenter,
+} from "react-icons/md";
 import {
   LiaToiletSolid,
   LiaHandshakeSolid,
   LiaToolboxSolid,
 } from "react-icons/lia";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
+
+import { IoWaterOutline } from "react-icons/io5";
+
+import { GiLeak } from "react-icons/gi";
+
+import { PiGarageLight } from "react-icons/pi";
 
 export const validationComp = [
   {
@@ -122,6 +132,41 @@ export const serviceCompLayout = [
     description:
       "We can put together furniture for you and save you time! We assemble it fast and efficiently",
     btnPath: "/services/furniture-assy",
+  },
+  {
+    iconName: <IoWaterOutline />,
+    title: "Water Damage Repair",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/water-damage-repair",
+  },
+  {
+    iconName: <MdOutlineFireplace />,
+    title: "Fireplace Tile Installation",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/fireplace-tile-install",
+  },
+  {
+    iconName: <GiLeak />,
+    title: "Leak Repair",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/leak-repair",
+  },
+  {
+    iconName: <MdOutlineCarpenter />,
+    title: "Carpentry",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/carpentry",
+  },
+  {
+    iconName: <PiGarageLight />,
+    title: "Garage Repair & Installation",
+    description:
+      "We can put together furniture for you and save you time! We assemble it fast and efficiently",
+    btnPath: "/services/garage-repair-install",
   },
 ];
 

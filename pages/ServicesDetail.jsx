@@ -169,6 +169,58 @@ export default function ServicesDetail() {
         </p>
         <img src={data && data.imgSrc} alt={data && data.heroName}></img>
       </div>
+
+      <div className="services-detail-impress">
+        <div className="services-detail-impress-qualifier">
+          <h1>What it's like working with us!</h1>
+          <p>
+            On top of our premium craftsmanship and superior customer service,
+            if anything goes wrong with what we fix within 1 year, we'll repair
+            it, free of charge.
+          </p>
+        </div>
+        <div className="services-detail-impress-list">
+          <ul>
+            <li>
+              <h3>High Quality</h3>
+              <p>
+                We don't just slap some paint on the wall and call it done.
+                We've got our painting down to a science, leaving you with an
+                even, high quality coat.
+              </p>
+            </li>
+            <li>
+              <h3>Thorough</h3>
+              <p>
+                We want to make sure you love the results. That's why we'll go
+                the extra mile to repair any minor damage, and find the root of
+                your damage problem, BEFORE we start painting, giving your
+                project a smooth finish.
+              </p>
+            </li>
+            <li>
+              <h3>Reliable</h3>
+              <p>
+                Ever set up a project with a handyman or other contractor and
+                have them cancel or not show up? At Chicago Handy, we stick to
+                our word, show up, and get the job done right.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <img src="" alt="logo" />
+        <h1>
+          Ready to get started on your {data.heroName.toLowerCase()} project?
+        </h1>
+        <button>Book Now!</button>
+      </div>
+
+      <div>
+        <h1>Frequently Asked Questions</h1>
+      </div>
     </>
   );
 }
