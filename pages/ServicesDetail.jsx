@@ -1,7 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { servicesPagesInfo } from "../utils";
+import { servicesPagesInfo, faqData, tempGallery } from "../utils";
 import { useForm } from "react-hook-form";
+import FAQTile from "../components/FAQTile";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 3,
+  },
+};
 
 export default function ServicesDetail() {
   const [data, setData] = useState({});
@@ -202,8 +226,8 @@ export default function ServicesDetail() {
               <h3>Reliable</h3>
               <p>
                 Ever set up a project with a handyman or other contractor and
-                have them cancel or not show up? At Chicago Handy, we stick to
-                our word, show up, and get the job done right.
+                have them cancel or not show up? At Alberto's HandyMan Co., we
+                stick to our word, show up, and get the job done right.
               </p>
             </li>
           </ul>
@@ -213,13 +237,52 @@ export default function ServicesDetail() {
       <div>
         <img src="" alt="logo" />
         <h1>
-          Ready to get started on your {data.heroName.toLowerCase()} project?
+          Ready to get started on your {data.heroName?.toLowerCase()} project?
         </h1>
         <button>Book Now!</button>
       </div>
 
       <div>
         <h1>Frequently Asked Questions</h1>
+        {faqData.map((data) => {
+          return <FAQTile question={data.question} answer={data.answer} />;
+        })}
+      </div>
+
+      <div>
+        <div>
+          <h3>Check out</h3>
+          <h2>Our Latest Projects!</h2>
+          <button> View More</button>
+        </div>
+        <div>
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            ssr={false} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={false}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="projects-right"
+            dotListClass="custom-dot-list-style"
+            itemClass="projects-carousel-item"
+          >
+            {tempGallery.map((component) => {
+              return (
+                <img
+                  src={component.imgSrc}
+                  style={{ width: "200px" }}
+                  alt="gallery-image"
+                />
+              );
+            })}
+          </Carousel>
+        </div>
       </div>
     </>
   );

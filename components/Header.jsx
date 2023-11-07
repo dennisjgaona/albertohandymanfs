@@ -44,7 +44,7 @@ export default function Header() {
         </NavLink>
         <LangButton />
         <button>{lang ? "Request Service" : "Requesiciona Servicio"}</button>
-        <button>{lang ? "Contact" : "Contactar"}</button>
+        <button>{`(214)-444-4444`}</button>
       </nav>
     </header>
   );

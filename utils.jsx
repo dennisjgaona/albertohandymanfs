@@ -435,3 +435,48 @@ We have many years of experience working with plumbing systems and are happy to 
     imgSrc: "",
   },
 ];
+
+export const faqData = [
+  {
+    question: "Does Alberto's handyman services offer a guarantee?",
+    answer:
+      "Yes, all handyman work includes a 100% satisfaction guarantee. If you are not happy, we will make it right.",
+  },
+  {
+    question:
+      "Do I need to purchase the materials on my own, or do you supply them?",
+    answer:
+      "Our quotes include material and labor. However, if you have already purchased materials, we can quote accordingly.",
+  },
+  {
+    question: "Do you charge by the hour or the job??",
+    answer:
+      "We charge by the job because projects vary so much. In this way, you know your pricing upfront and don't need to worry about getting billed for work that takes longer than expected.",
+  },
+  {
+    question: "How do I pay for services?",
+    answer:
+      "You'll receive an invoice via email once the job is complete. It will list various payment options to choose from, including check and credit card.",
+  },
+  {
+    question: "Will you work weekends and evenings?",
+    answer:
+      "Standard business hours are Monday - Friday from 7 a.m. to 6 p.m. However, in situations deemed an emergency, it's possible we can offer service in the evening or on a Saturday or Sunday.",
+  },
+  {
+    question: "Can I trust an Alberto's handyman in my home or office?",
+    answer:
+      "Absolutely! We run a background check on all our employees. In addition, we seek committed, long term employees who want to learn, grow, and advance while delivering on our promise to you of Professional Service and Personal Care.",
+  },
+  {
+    question:
+      "How can I get an estimate or price quote for my job, and how soon can you start the work?",
+    answer:
+      "Call, email, or submit your information online. Once you make a request, we will schedule an onsite estimate appointment. Typically, after the quote is accepted, the job begins within a week.",
+  },
+  {
+    question: "Can you give me a ballpark estimate over the phone?",
+    answer:
+      "There are many factors to consider when preparing a quote. For instance, we need to look at the job to determine how long it will take and what materials are required. In certain circumstances, we can prepare a quote using pictures you send us. When that's the case, we'll let you know.",
+  },
+];
