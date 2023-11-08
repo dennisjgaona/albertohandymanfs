@@ -106,9 +106,7 @@ footer {
   margin-top: auto;
   font-weight: 500;
 }
-button {
-  background-color: aliceblue;
-}
+
 /* HERO CSS */
 .hero {
   display: grid;

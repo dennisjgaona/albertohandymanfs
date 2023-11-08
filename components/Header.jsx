@@ -43,7 +43,9 @@ export default function Header() {
           {lang ? "About" : "Informacion"}
         </NavLink>
         <LangButton />
-        <button>{lang ? "Request Service" : "Requesiciona Servicio"}</button>
+        <NavLink to="/book-a-handyman">
+          <button>{lang ? "Request Service" : "Requesiciona Servicio"}</button>
+        </NavLink>
         <button>{`(214)-444-4444`}</button>
       </nav>
     </header>
