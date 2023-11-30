@@ -27,13 +27,13 @@ import { PiGarageLight } from "react-icons/pi";
 export const validationComp = [
   {
     title: "Lifelong Career Professional",
-    subTitle: "In Construction Business",
+    subTitle: "Construction Business",
     imgSrc:
       "https://img.icons8.com/external-wanicon-lineal-color-wanicon/256/external-construction-construction-wanicon-lineal-color-wanicon-1.png",
   },
   {
     title: "Certified NextDoor Neighbor",
-    subTitle: "from Excellent Customer Service",
+    subTitle: "Excellent Customer Service",
     imgSrc:
       "https://img.icons8.com/external-thin-kawalan-studio/96/external-nextdoor-social-media-thin-kawalan-studio.png",
   },

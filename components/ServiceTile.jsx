@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { IconContext } from "react-icons";
 
 export default function ServiceTile({ iconName, title, description, btnPath }) {
   const [isHovered, setHover] = useState(false);
@@ -16,7 +17,19 @@ export default function ServiceTile({ iconName, title, description, btnPath }) {
 
   const hoveredView = (
     <>
-      <div className="service-tile-img-hover">{iconName}</div>
+      <div className="service-tile-img-hover">
+        {
+          <IconContext.Provider
+            value={{
+              verticalAlign: "right",
+              size: "50px",
+              color: "white",
+            }}
+          >
+            {iconName}
+          </IconContext.Provider>
+        }
+      </div>
       <div className="service-tile-title-hover">
         <h2> {title}</h2>
         <h3>{description}</h3>

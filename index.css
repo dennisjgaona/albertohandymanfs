@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #050401;
-  background-color: #242424;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,13 +20,23 @@
 
 html,
 body {
-  text-align: center;
   margin: auto;
   padding: auto 100px;
-  background-color: #cecedf;
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
 }
-
+h1 {
+  font-size: xx-large;
+  color: #30bced;
+}
+h2 {
+  font-size: large;
+  color: #303036;
+}
+h3 {
+  font-size: medium;
+  color: #fc5130;
+}
 a {
   text-decoration: unset;
   color: unset;
@@ -45,8 +55,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 header {
@@ -54,7 +62,7 @@ header {
   display: flex;
   align-items: center;
   padding-block: 10px;
-  background-color: #30bced;
+  background-color: #4fb6dfdc;
 }
 
 header .site-logo {
@@ -106,57 +114,135 @@ footer {
   margin-top: auto;
   font-weight: 500;
 }
+/* *******************HOME PAGE CSS*********************************** */
 
 /* HERO CSS */
 .hero {
-  display: grid;
-  background-image: url("./src/assets/dallasSkylineVector.jpg");
+  display: flex;
+
+  flex-direction: column;
+  background-image: url("./src/assets/hero.jpg");
 
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 800px; /* You must set a specified height */
+  height: 100vh; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
 
 .hero-text {
-  padding-top: 10%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  height: 30vh;
+  margin-left: 22vw;
+  justify-content: left;
+  align-items: left;
+}
+.hero-logo {
+  height: 400px;
+  margin-bottom: -130px;
+  margin-top: -30px;
+  margin-left: -45vw;
+  justify-content: left;
+  align-items: left;
 }
 
 .hero-text h1 {
   color: #30bced;
-  justify-content: center;
-  align-items: center;
 }
 .hero-text h2 {
   color: #303036;
-  justify-content: center;
-  align-items: center;
 }
 .hero-button {
   display: flex;
+  margin-left: 22vw;
+}
 
-  justify-content: center;
+.hero-text span {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   align-items: center;
+  flex-wrap: nowrap;
 }
 /* VALIDATION HEADER CSS */
 .validation {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin-left: 15vw;
+}
+.validation-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.349);
+  border-style: ridge;
+  min-width: 275px;
+  margin-right: 3%;
+  margin-top: 3%;
+  border-radius: 15px;
+}
+.validation-comp h1 {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: -3%;
 }
 /* VALIDATION HEADER CSS */
 /* *******SERVICES******** */
 .services {
-  background-color: antiquewhite;
+  background-color: white;
+  width: 65vw;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.services-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
 }
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 50px;
+  margin-top: 7%;
+}
+.service-tile-normal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.service-tile-hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 10px;
+}
+.service-tile-title-hover {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+/* .service-tile-hover svg {
+  width: 50px;
+} */
+.service-tile-img-hover {
+  background-color: #fc5130;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.service-tile-img-hover > img {
+  width: 50px;
 }
 .servicesPage-hero {
   display: grid;

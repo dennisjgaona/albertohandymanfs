@@ -4,6 +4,10 @@ import ValidationComponent from "../components/ValidationComponent";
 import ServiceTile from "../components/ServiceTile";
 import WhyUsTile from "../components/WhyUsTile";
 import ReviewTile from "../components/ReviewTile";
+import { CiCircleCheck } from "react-icons/ci";
+import Logo from "../src/assets/Logo";
+import { IconContext } from "react-icons";
+
 import {
   validationComp,
   serviceComp,
@@ -39,30 +43,109 @@ export default function Home() {
   return (
     <>
       <div className="hero">
+        <div className="hero-logo">
+          <Logo />
+        </div>
         <div className="hero-text">
-          <h2>Quality Service. Reliable Repairs. Exceptional Craftsmanship.</h2>
-          <h1>Alberto the HandyMan at Your Service</h1>
+          <h1>At Your Service!</h1>
+          <span>
+            <IconContext.Provider
+              value={{
+                verticalAlign: "middle",
+                size: "30px",
+                color: "green",
+              }}
+            >
+              <div style={{ marginRight: "20px" }}>
+                <CiCircleCheck />
+              </div>
+            </IconContext.Provider>
+
+            <h2>Quality Service.</h2>
+          </span>
+          <span>
+            <IconContext.Provider
+              value={{
+                verticalAlign: "middle",
+                size: "30px",
+                color: "green",
+              }}
+            >
+              <div style={{ marginRight: "20px" }}>
+                <CiCircleCheck />
+              </div>
+            </IconContext.Provider>
+            <h2>Reliable Repairs.</h2>
+          </span>
+          <span>
+            <IconContext.Provider
+              value={{
+                verticalAlign: "middle",
+                size: "30px",
+                color: "green",
+              }}
+            >
+              <div style={{ marginRight: "20px" }}>
+                <CiCircleCheck />
+              </div>
+            </IconContext.Provider>
+            <h2>Exceptional Craftsmanship.</h2>
+          </span>
         </div>
         <div className="hero-button">
-          <Button>Book Today!</Button>
-          <Button>4693503919</Button>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="orange"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            marginRight="20px"
+            marginTop="20px"
+          >
+            Book Today!
+          </Button>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            marginTop="20px"
+          >
+            4693503919
+          </Button>
+        </div>
+        <div className="validation">
+          {validationComp.map((component) => {
+            return (
+              <ValidationComponent
+                title={component.title}
+                subTitle={component.subTitle}
+                imgSrc={component.imgSrc}
+              />
+            );
+          })}
         </div>
       </div>
-      <div className="validation">
-        {validationComp.map((component) => {
-          return (
-            <ValidationComponent
-              title={component.title}
-              subTitle={component.subTitle}
-              imgSrc={component.imgSrc}
-            />
-          );
-        })}
-      </div>
+
       <div className="services">
         <div className="services-intro">
-          <h2>Alberto's Handyman Services </h2>
-          <h3>Explore our full menu of Handyman Services</h3>
+          <h1>Alberto's Handyman Services </h1>
+          <h2>Explore our full menu of Handyman Services</h2>
         </div>
         <div className="services-grid">
           {serviceComp.map((component) => {
@@ -76,11 +159,36 @@ export default function Home() {
             );
           })}
         </div>
-        <Button>See All Services</Button>
+        <div
+          style={{
+            display: "flex",
+            alignContent: "center",
+            justifyContent: "center",
+            marginBottom: "5%",
+          }}
+        >
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            marginTop="20px"
+          >
+            See All Services
+          </Button>
+        </div>
       </div>
       <div className="whyUs">
         <div className="whyUs-left">
-          <h2> Alberto's HandyMan Difference</h2>
+          <h1> Alberto's HandyMan Difference</h1>
           <Button>About Us</Button>
         </div>
         <div className="whyUs-right">
