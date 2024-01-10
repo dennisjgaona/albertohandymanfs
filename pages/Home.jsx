@@ -23,19 +23,23 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 4,
+    partialVisibilityGutter: 40,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 4,
+    partialVisibilityGutter: 40,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
+    partialVisibilityGutter: 30,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
+    partialVisibilityGutter: 30,
   },
 };
 
@@ -168,7 +172,7 @@ export default function Home() {
           }}
         >
           <Button
-            linkTo="/book-a-handyman"
+            linkTo="/services"
             background-color="#30bced"
             display="flex"
             color="white"
@@ -186,10 +190,26 @@ export default function Home() {
           </Button>
         </div>
       </div>
+
       <div className="whyUs">
         <div className="whyUs-left">
-          <h1> Alberto's HandyMan Difference</h1>
-          <Button>About Us</Button>
+          <pre>{`The\nAlberto's HandyMan\nDifference`}</pre>
+          <Button
+            linkTo="/about"
+            background-color="#fc5130"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+          >
+            About Us
+          </Button>
         </div>
         <div className="whyUs-right">
           {whyUsComp.map((component) => {
@@ -203,15 +223,16 @@ export default function Home() {
         </div>
       </div>
       <div className="reviews">
-        <h2> Reviews from Happy Customers!</h2>
+        <h1> Reviews from Happy Customers!</h1>
         <div className="reviews-carousel">
           <Carousel
-            swipeable={false}
+            swipeable={true}
             draggable={false}
-            showDots={true}
+            showDots={false}
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
+            centerMode={false}
             autoPlay={true}
             autoPlaySpeed={3000}
             keyBoardControl={true}
@@ -220,7 +241,8 @@ export default function Home() {
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item"
+            partialVisible={true}
           >
             {reviewComp.map((component) => {
               return (
@@ -233,33 +255,77 @@ export default function Home() {
             })}
           </Carousel>
         </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "6vh",
+          }}
+        >
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="orange"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+          >
+            Book Today!
+          </Button>
+        </div>
       </div>
       <div className="projects">
         <div className="projects-left">
-          <h2>here is a slideshow of all of our recent work! </h2>
+          <Logo />
+          <pre>{`Recent Home\nRepair Work`}</pre>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+          >
+            View More!
+          </Button>
         </div>
         <div className="projects-right">
           <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={true}
+            swipeable={true}
+            draggable={true}
+            showDots={false}
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
-            autoPlay={false}
+            centerMode={false}
+            autoPlay={true}
             autoPlaySpeed={3000}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
-            containerClass="projects-right"
-            dotListClass="custom-dot-list-style"
-            itemClass="projects-carousel-item"
+            containerClass="carousel-container-projects"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style-projects"
+            itemClass="carousel-item-projects"
+            partialVisible={true}
           >
             {tempGallery.map((component) => {
               return (
                 <img
                   src={component.imgSrc}
-                  style={{ width: "200px" }}
+                  style={{ maxWidth: "100%", objectFit: "cover" }}
                   alt="gallery-image"
                 />
               );
@@ -268,9 +334,45 @@ export default function Home() {
         </div>
       </div>
       <div className="calltoaction">
-        <h2>Ready to start your project? </h2>
-        <h3>Give Alberto's HandyMan a call for a free consultation</h3>
-        <Button>Book A HandyMan</Button>
+        <div className="calltoaction-bubble">
+          <h2
+            style={{
+              fontSize: "xx-large",
+              color: "#1c6b88",
+              fontWeight: "700",
+              lineHeight: "1",
+            }}
+          >
+            Ready to start your project?
+          </h2>
+          <h3
+            style={{
+              fontSize: "x-large",
+              color: "##fc5130",
+              fontWeight: "600",
+              lineHeight: "1",
+            }}
+          >
+            Give Alberto's HandyMan a call for a free consultation.
+          </h3>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            justifySelf="center"
+          >
+            Book A HandyMan
+          </Button>
+        </div>
       </div>
     </>
   );

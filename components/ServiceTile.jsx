@@ -33,7 +33,9 @@ export default function ServiceTile({ iconName, title, description, btnPath }) {
       <div className="service-tile-title-hover">
         <h2> {title}</h2>
         <h3>{description}</h3>
-        <Link to={btnPath}>Learn More</Link>
+        <div>
+          <Link to={btnPath}>Learn More</Link>
+        </div>
       </div>
     </>
   );

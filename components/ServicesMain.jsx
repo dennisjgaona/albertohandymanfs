@@ -1,10 +1,12 @@
 import React from "react";
-import { serviceCompLayout, tempGallery } from "../utils";
+import { serviceCompLayout, tempGallery, validationComp } from "../utils";
+import ValidationServicesComponent from "../components/ValidationComponent";
 //import { Outlet } from "react-router-dom";
 import ServicePageTile from "./ServicePageTile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import Logo from "../src/assets/Logo";
+import Button from "../components/Button";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -29,58 +31,63 @@ export default function ServicesMain() {
   return (
     <>
       <div className="servicesPage-hero">
-        <h1>HandyMan Services!</h1>
-        <p>
-          We find that most people can easily make a list of at least 10 items
-          around their house that they would like to repair or update. Perhaps
-          your “HoneyDew” list has managed to remain a “HoneyDidn't” list. The
-          Chicago Handy team is happy to help complete even the smallest tasks
-          for you. From tightening kitchen hardware and doorknobs, to
-          rescreening your back door or installing a Wall-Mounted Flat Screen
-          TV, we have you covered! We guarantee to provide you with a
-          significant value for the cost of your service. Our handyman service
-          menu can be found below. If you don't see your task listed below, give
-          us a call anyways! Chances are we can help.
-        </p>
-        <ul>
-          <li>
-            <h4>10+ Years</h4>
-            <p>In Business</p>
-            <div>
-              <p>image will go here! </p>
-            </div>
-          </li>
-          <li>
-            <h4>6000+</h4>
-            <p>Jobs Completed</p>
-            <div>
-              <p>image will go here! </p>
-            </div>
-          </li>
-          <li>
-            <h4>100's of Reviews</h4>
-            <p>From Satisfied Customers</p>
-            <div>
-              <p>image will go here! </p>
-            </div>
-          </li>
-        </ul>
+        <div className="servicesPage-heroLeft">
+          <h1>HandyMan Services!</h1>
+          <p>
+            We find that most people can easily make a list of at least 10 items
+            around their house that they would like to repair or update.
+            Perhapsyour “HoneyDew” list has managed to remain a “HoneyDidn't”
+            list. The Chicago Handy team is happy to help complete even the
+            smallest tasks for you. From tightening kitchen hardware and
+            doorknobs, to rescreening your back door or installing a
+            Wall-Mounted Flat Screen TV, we have you covered!
+          </p>
+          <p>
+            We guarantee to provide you with a significant value for the cost of
+            your service.
+          </p>
+          <p>
+            Our handyman service menu can be found below. If you don't see your
+            task listed below, give us a call anyways! Chances are we can help.
+          </p>
+
+          <div className="validationServices">
+            {validationComp.map((component) => {
+              return (
+                <ValidationServicesComponent
+                  title={component.title}
+                  subTitle={component.subTitle}
+                  imgSrc={component.imgSrc}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="servicesPage-heroRight">
+          <img src="../src/assets/handymanServicesHero.jpg"></img>
+        </div>
       </div>
       <div className="services-allServices">
-        {serviceCompLayout.map((component) => {
-          return (
-            <ServicePageTile
-              key={component.title}
-              title={component.title}
-              iconName={component.iconName}
-              btnPath={component.btnPath}
-            />
-          );
-        })}
-      </div>
-      <div>
         <div>
-          <h2>Our Commitment to You:</h2>
+          <h1>Full HandyMan Service Menu</h1>
+          <h3>MOST POPULAR</h3>
+        </div>
+        <div className="services-allServicesList">
+          {serviceCompLayout.map((component) => {
+            return (
+              <ServicePageTile
+                key={component.title}
+                title={component.title}
+                iconName={component.iconName}
+                btnPath={component.btnPath}
+              />
+            );
+          })}
+        </div>
+      </div>
+      <div className="services-commitment">
+        <div className="services-commitmentLeft">
+          <h1>Our Commitment to You:</h1>
           <h3>Values, Ethics, and Safety</h3>
           <p>
             We are a locally owned and operated company that supports our
@@ -106,46 +113,105 @@ export default function ServicesMain() {
             back to life uninterrupted by nuisances.
           </p>
         </div>
-        <div>
+        <div className="services-commitmentRight">
           <img
             src="https://img.freepik.com/premium-vector/work-tools-poster-heart-symbol_8071-18308.jpg"
             alt="commitment image"
           ></img>
         </div>
       </div>
-      <div>
-        <div>
-          <h3>Check out</h3>
-          <h2>Our Latest Projects!</h2>
-          <button> View More</button>
+      <div className="projects">
+        <div className="projects-left">
+          <Logo />
+          <pre>{`Recent Home\nRepair Work`}</pre>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+          >
+            View More!
+          </Button>
         </div>
-        <div>
+        <div className="projects-right">
           <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={true}
+            swipeable={true}
+            draggable={true}
+            showDots={false}
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
-            autoPlay={false}
+            centerMode={false}
+            autoPlay={true}
             autoPlaySpeed={3000}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
-            containerClass="projects-right"
-            dotListClass="custom-dot-list-style"
-            itemClass="projects-carousel-item"
+            containerClass="carousel-container-projects"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style-projects"
+            itemClass="carousel-item-projects"
+            partialVisible={true}
           >
             {tempGallery.map((component) => {
               return (
                 <img
                   src={component.imgSrc}
-                  style={{ width: "200px" }}
+                  style={{ maxWidth: "100%", objectFit: "cover" }}
                   alt="gallery-image"
                 />
               );
             })}
           </Carousel>
+        </div>
+      </div>
+      <div className="calltoaction">
+        <div className="calltoaction-bubble">
+          <h2
+            style={{
+              fontSize: "xx-large",
+              color: "#1c6b88",
+              fontWeight: "700",
+              lineHeight: "1",
+            }}
+          >
+            Ready to get started?
+          </h2>
+          <h3
+            style={{
+              fontSize: "x-large",
+              color: "##fc5130",
+              fontWeight: "600",
+              lineHeight: "1",
+            }}
+          >
+            Schedule for your FREE consultation
+          </h3>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            justifySelf="center"
+          >
+            Book A HandyMan
+          </Button>
         </div>
       </div>
     </>
