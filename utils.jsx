@@ -325,6 +325,8 @@ export const servicesPagesInfo = [
       Wet drywall loses its structural integrity and becomes weak, causing holes and other issues. If you have water damage in your drywall, we'll remove the damaged areas and replace with new drywall. We professionally apply a joining compound for a seamless look and when painted, you're left with your wall looking brand new.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/painting-contractors-scaled.jpg",
+    heroImg:
+      "https://i0.wp.com/www.deplok.com/wp-content/uploads/2019/06/Painting-Drywall.jpg?fit=950%2C632&ssl=1",
   },
   {
     id: "caulk-grout",
@@ -341,6 +343,8 @@ Over time (or with improper installation), caulking and grout can degrade and wi
 Chicago Handy has years of experience ensuring your caulking and grout has a proper seal, preserving your countertops, tile floors, and more.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/Grout-repair-and-caulking-replacement.jpg",
+    heroImg:
+      "https://apollohome.com/wp-content/uploads/2014/06/bathroom-sink-caulk-gun.jpg",
   },
   {
     id: "tile-backsplash",
@@ -359,6 +363,8 @@ And we also install kitchen backsplashes to help add a unique aesthetic touch to
 Whatever the tile or backsplash project, Chicago Handy can install everything professionally and in a timely manner.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/05/Norbert-Sienko-Powder-room-tile-installation.jpg",
+    heroImg:
+      "https://i.etsystatic.com/20768209/r/il/a56d2a/2012735655/il_1080xN.2012735655_5vr3.jpg",
   },
   {
     id: "doors-locks",
@@ -377,6 +383,8 @@ Locks are a huge part of keeping your house safe and secure, so we take the time
 Whether it's an exterior door to update the look of your house or an interior door to replace an old one, give Chicago Handy a call to get it done right!`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/house-1407562_1920.jpg",
+    heroImg:
+      "https://www.lockedinnout.com/wp-content/uploads/2022/04/Commercial-Door-Locks.jpg",
   },
   {
     id: "plumbing",
@@ -389,6 +397,8 @@ When your pipes are leaking, you need a toilet repaired or replaced, you need yo
 We have many years of experience working with plumbing systems and are happy to help fix your plumbing issue`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/plumbing-840835_1920.jpg",
+    heroImg:
+      "https://tiogacontractors.com/wp-content/uploads/2018/04/Common-Mistakes-in-Dallas-Plumbing-and-Upkeep-_-Plumbing-Service-in-Dallas.jpg",
   },
   {
     id: "furniture-assy",
@@ -397,34 +407,48 @@ We have many years of experience working with plumbing systems and are happy to 
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     imgSrc:
       "https://www.leatherman.com/on/demandware.static/-/Library-Sites-leatherman-shared2020/default/dw7a20553f/blog/home/diy/7-hacks-for-assembling-furniture/AssemblingFurniture-full.jpg",
+    heroImg:
+      "https://helloservices.co.uk/wp-content/uploads/2021/10/flat-pack-assembler-near-me.jpg",
   },
   {
     id: "water-damage-repair",
     heroName: "Water Damage Repair",
     mainTitle: "Replace water damaged walls, sheetrock, carpet, etc.",
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Sed tempus urna et pharetra pharetra massa massa. Turpis in eu mi bibendum neque egestas congue. Sapien pellentesque habitant morbi tristique senectus et. Non enim praesent elementum facilisis. Vulputate eu scelerisque felis imperdiet proin fermentum. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Nec sagittis aliquam malesuada bibendum. Lorem sed risus ultricies tristique nulla aliquet enim. Nisl tincidunt eget nullam non.`,
-    imgSrc: "",
+    imgSrc:
+      "https://www.ezgreen-service.com/wp-content/uploads/2022/11/Water-Damage-Repair-1024x768-1.jpg",
+    heroImg:
+      "https://american-restoration.com/wp-content/uploads/2021/05/water-damage-repair-diy.png",
   },
   {
     id: "fireplace-tile-install",
     heroName: "Fireplace Tile Installation",
     mainTitle: "We install beautiful fireplace tiles",
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nisl rhoncus mattis rhoncus urna neque viverra. Massa enim nec dui nunc mattis enim. Elementum nibh tellus molestie nunc non blandit massa enim nec. Sed euismod nisi porta lorem mollis aliquam ut. A lacus vestibulum sed arcu non odio euismod lacinia. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquam sem fringilla ut morbi tincidunt augue. Ipsum a arcu cursus vitae congue. Nibh praesent tristique magna sit amet purus gravida quis. Cras pulvinar mattis nunc sed blandit libero volutpat. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.`,
-    imgSrc: "",
+    imgSrc:
+      "https://thehappierhomemaker.com/wp-content/uploads/2019/01/tile-fireplace-surround-diy.jpg",
+    heroImg:
+      "https://classiquefloors.com/wp-content/uploads/2023/10/Ferreira-Hearth-Tile-1000.jpg",
   },
   {
     id: "leak-repair",
     heroName: "Leaky Pipes Repair",
     mainTitle: "We identify and fix leaky pipes",
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus vitae. Ultricies mi quis hendrerit dolor magna eget est lorem. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Scelerisque purus semper eget duis at tellus at. Id semper risus in hendrerit gravida. Ornare lectus sit amet est placerat in egestas. Rhoncus mattis rhoncus urna neque viverra justo. Aliquet enim tortor at auctor. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Pharetra pharetra massa massa ultricies mi quis hendrerit. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed lectus vestibulum mattis ullamcorper.`,
-    imgSrc: "",
+    imgSrc:
+      "https://library.homeserve.com/m/63ed80bb936ab0c/Blog-GettyImages-1136317145.jpg",
+    heroImg:
+      "https://www.tmscomfort.com/wp-content/uploads/2019/11/1564474437516hidden-plumbing-1.jpg",
   },
   {
     id: "carpentry",
     heroName: "Carpentry",
     mainTitle: "Get your carpentry needs met with us",
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nisl pretium fusce id. Tempor nec feugiat nisl pretium fusce id velit ut. Lorem mollis aliquam ut porttitor leo a. Massa ultricies mi quis hendrerit dolor magna eget est. Feugiat scelerisque varius morbi enim nunc faucibus. Velit euismod in pellentesque massa placerat duis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Magna sit amet purus gravida quis blandit. Fermentum odio eu feugiat pretium. Commodo sed egestas egestas fringilla phasellus faucibus`,
-    imgSrc: "",
+    imgSrc:
+      "https://www.pikespeak.edu/_images-universal/vertical-images/carpentry-800x1200-2.jpg",
+    heroImg:
+      "https://www.byf.org/wp-content/uploads/2022/01/IMG_6719-1146x600-1.jpg",
   },
   {
     id: "garage-repair-install",
@@ -432,7 +456,10 @@ We have many years of experience working with plumbing systems and are happy to 
     mainTitle:
       "Automatic and remote control garage door repairs and installations",
     mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Mattis vulputate enim nulla aliquet porttitor lacus. Eget nulla facilisi etiam dignissim diam quis enim. Id eu nisl nunc mi. Id neque aliquam vestibulum morbi blandit cursus risus. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Nunc pulvinar sapien et ligula. Porta lorem mollis aliquam ut porttitor leo.`,
-    imgSrc: "",
+    imgSrc:
+      "https://okdiscountgaragedoor.com/wp-content/uploads/2022/02/GarageDoorRepair-800x500-1.png",
+    heroImg:
+      "https://raynor.com/wp-content/uploads/2021/05/garage-door-repair-e1630931235655.png",
   },
 ];
 

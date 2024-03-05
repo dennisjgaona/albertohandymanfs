@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import DatePicker from "react-datepicker";
-
+import Logo from "../src/assets/Logo";
 import "react-datepicker/dist/react-datepicker.css";
+
+import Button from "../components/Button";
+
 export default function Contact() {
   const [successMsg, setSuccessMsg] = useState("");
   const [date, setDate] = useState(new Date(Date.now()));
@@ -30,19 +33,25 @@ export default function Contact() {
   console.log(errors);
   return (
     <>
-      <div>
-        <h1>This is the contact page!</h1>
+      <div className="contact-title">
+        <div className="contact-title-logo">
+          <Logo />
+        </div>
+
+        <h1>Book a HandyMan!</h1>
       </div>
-      <div className="services-detail-hero">
-        <div>
+
+      <div className="contact-form-container">
+        <div className="contact-form">
           <form onSubmit={handleSubmit(onSubmit)}>
             {successMsg && <p className="success-msg">{successMsg}</p>}
 
             <div className="form-control">
-              <label>First Name</label>
+              <label>First Name*</label>
               <input
                 type="text"
                 name="firstName"
+                placeholder="Your First Name"
                 {...register("firstName", {
                   required: "First Name is required.",
                 })}
@@ -53,10 +62,11 @@ export default function Contact() {
             </div>
 
             <div className="form-control">
-              <label>Last Name</label>
+              <label>Last Name*</label>
               <input
                 type="text"
                 name="lastName"
+                placeholder="Your Last Name"
                 {...register("lastName", {
                   required: "Last  Name is required.",
                 })}
@@ -67,48 +77,11 @@ export default function Contact() {
             </div>
 
             <div className="form-control">
-              <label>City</label>
-              <input
-                type="text"
-                name="city"
-                {...register("city", {
-                  required: "City is required.",
-                })}
-              />
-              {errors.city && <p className="errorMsg">{errors.city.message}</p>}
-            </div>
-
-            <div className="form-control">
-              <label>Zip</label>
-              <input
-                type="text"
-                name="zip"
-                {...register("zip", {
-                  required: "Zip code is required.",
-                })}
-              />
-              {errors.zip && <p className="errorMsg">{errors.zip.message}</p>}
-            </div>
-
-            <div className="form-control">
-              <label>Address</label>
-              <input
-                type="text"
-                name="address"
-                {...register("address", {
-                  required: "Zip code is required.",
-                })}
-              />
-              {errors.address && (
-                <p className="errorMsg">{errors.address.message}</p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label>Email</label>
+              <label>Email*</label>
               <input
                 type="text"
                 name="email"
+                placeholder="Your Email Address"
                 {...register("email", {
                   required: "Email is required.",
                   pattern: {
@@ -123,10 +96,11 @@ export default function Contact() {
             </div>
 
             <div className="form-control">
-              <label>Mobile Number</label>
+              <label>Mobile Number*</label>
               <input
                 type="tel"
                 name="phoneNumber"
+                placeholder="Your Phone Number"
                 {...register("phoneNumber", {
                   required: "Phone Number is required.",
 
@@ -138,6 +112,31 @@ export default function Contact() {
               />
               {errors.phoneNumber && (
                 <p className="errorMsg">{errors.phoneNumber.message}</p>
+              )}
+            </div>
+            <div className="form-control">
+              <label>Address*</label>
+              <input
+                type="text"
+                name="address"
+                placeholder="Your Address"
+                {...register("address", {
+                  required: "Zip code is required.",
+                })}
+              />
+              {errors.address && (
+                <p className="errorMsg">{errors.address.message}</p>
+              )}
+            </div>
+            <div className="form-control">
+              <label>Unit #</label>
+              <input
+                name="UnitNumb"
+                placeholder="Unit #"
+                {...register("unitNumber", {})}
+              />
+              {errors.UnitNumb && (
+                <p className="errorMsg">{errors.UnitNumb.message}</p>
               )}
             </div>
 
@@ -185,7 +184,24 @@ export default function Contact() {
               />
             </div>
             <div className="form-control">
-              <button type="submit">Submit</button>
+              <Button
+                linkTo="/book-a-handyman"
+                background-color="#30bced"
+                display="flex"
+                color="white"
+                flexDirection="column"
+                justifyContent="center"
+                fontSize="16px"
+                textAlign="center"
+                border="none"
+                width="125px"
+                height="60px"
+                borderRadius="12px"
+                justifySelf="center"
+                type="submit"
+              >
+                Submit
+              </Button>
             </div>
           </form>
         </div>
@@ -193,3 +209,14 @@ export default function Contact() {
     </>
   );
 }
+
+// <div className="services-detail-heroForm">
+//   <form onSubmit={handleSubmit(onSubmit)}>
+//     {successMsg && <p className="success-msg">{successMsg}</p>}
+
+//     <div className="form-control">
+//       <label></label>
+//       <button type="submit">Send Email</button>
+//     </div>
+//   </form>
+// </div>;

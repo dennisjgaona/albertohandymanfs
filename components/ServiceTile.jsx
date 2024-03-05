@@ -43,6 +43,7 @@ export default function ServiceTile({ iconName, title, description, btnPath }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={() => setHover(!isHovered)}
       className={isHovered ? "service-tile-hover" : "service-tile-normal"}
     >
       {isHovered ? hoveredView : normalView}

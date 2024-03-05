@@ -93,11 +93,71 @@ header .login-link {
   display: inline-flex;
   align-items: center;
 }
+/************** NAV BAR --start********/
 
-nav {
+.navbar-container {
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
+.navbar {
+  background-color: aliceblue;
+  position: relative;
+}
+
+.navbar-logo {
+  height: 150px;
+  margin: -2vh -2vw;
+}
+
+.navbar-menu-icon {
+  display: none;
+}
+/* 
+.nav-elements {
+} */
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #30bced;
+
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc5130;
+}
+
+/**************NAV BAR --end***********/
 main {
   margin-bottom: 84px;
 }
@@ -127,33 +187,30 @@ footer {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  padding-bottom: 10vh;
 }
 
 .hero-text {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   height: 30vh;
-  margin-left: 22vw;
-  justify-content: left;
-  align-items: left;
+  margin: auto;
+  justify-content: center;
 }
 .hero-logo {
   height: 400px;
-  margin-bottom: -130px;
-  margin-top: -30px;
-  margin-left: -45vw;
-  justify-content: left;
-  align-items: left;
+  margin-bottom: -100px;
 }
 
 .hero-text h1 {
   color: #30bced;
 }
 .hero-text h2 {
-  color: #303036;
+  color: #e0e0e9;
 }
 .hero-button {
   display: flex;
-  margin-left: 22vw;
+  margin: auto;
 }
 
 .hero-text span {
@@ -170,14 +227,14 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
 
-  margin-left: 15vw;
+  margin: auto;
 }
 .validation-comp {
   display: flex;
   flex-direction: column;
   justify-content: start;
   text-align: center;
-  background-color: rgba(240, 248, 255, 0.349);
+  background-color: rgba(237, 238, 240, 0.781);
   border-style: ridge;
   min-width: 275px;
   margin-right: 3%;
@@ -185,12 +242,14 @@ footer {
   border-radius: 15px;
 }
 .validation-comp h1 {
+  color: #fc5130;
   font-size: large;
   font-weight: 600;
   margin-bottom: -3%;
 }
 /*****************VALIDATION HEADER*****************/
-/*****************SERVICES HOME PAGE****************/
+
+/******************************************************SERVICES HOME PAGE****************/
 .services {
   background-color: white;
   width: 65vw;
@@ -208,32 +267,36 @@ footer {
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 30px;
   row-gap: 50px;
-  margin-top: 7%;
+
   justify-items: center;
 }
 .service-tile-normal {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  height: max-content;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 .service-tile-title-norm {
   padding-left: 2vw;
 }
 .service-tile-hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  height: max-content;
   border-radius: 10px;
 }
 .service-tile-title-hover {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%;
-  padding-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 .service-tile-title-hover > div {
   display: inline-block;
@@ -315,13 +378,13 @@ footer {
   margin-top: -20vh;
   padding-top: 22vh;
   text-align: center;
-  background-color: rgb(226, 251, 255);
+  background-color: rgb(52, 54, 54);
   padding-bottom: 15vh;
   justify-content: center;
 }
 .reviews > h1 {
-  color: #fc5130;
   margin-bottom: 5vh;
+  color: #30bced;
 }
 
 .review-tile {
@@ -333,6 +396,11 @@ footer {
 }
 .review-tile > img {
   width: 100px;
+}
+.review-tile-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*****************REVIEW HOME PAGE******************/
@@ -364,7 +432,6 @@ footer {
 
 .projects-right {
   display: grid;
-  background-color: rgb(226, 251, 255);
 }
 .carousel-container-projects > ul > li > img {
   max-height: 100%;
@@ -383,8 +450,7 @@ footer {
   padding-top: 20vh;
   padding-bottom: 20vh;
   margin-bottom: 15vh;
-
-  background-color: rgb(226, 251, 255);
+  background-color: rgb(54, 54, 54);
   background-image: url("/src/assets/dallasSkylineVector.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -394,10 +460,10 @@ footer {
 
 .calltoaction-bubble {
   display: grid;
-  background-color: rgba(208, 220, 236, 0.829);
+  background-color: rgba(255, 208, 169, 0.84);
   border-radius: 15px;
-  padding: 5% 10%;
-  justify-content: center;
+  padding: 5vh 7.5vw;
+  justify-content: flex-end;
 }
 /*****************CALL TO ACTION HOME PAGE**********/
 
@@ -496,6 +562,7 @@ footer {
   border-bottom-right-radius: 77%;
   border-bottom-left-radius: 77%;
   box-shadow: 0 0 0 5vh #cde5ee;
+  overflow: hidden;
 }
 
 .servicesPage-heroLeft {
@@ -587,11 +654,12 @@ footer {
   padding-top: 5vh;
 }
 
-/*****************Services Detail Pages*************/
+/*************************************************Services Detail Pages************************************************/
 
 .services-detail-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 75vh;
 }
 .services-detail-heroLeft {
   background-color: aliceblue;
@@ -611,30 +679,7 @@ footer {
   padding-bottom: 2%;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-}
-
-.form-control {
-  display: grid;
-
-  text-align: left;
-}
-.form-control > button {
-  width: 200%;
-  background-color: rgb(218, 114, 66);
-  border-radius: 10px;
-  height: 5vh;
-  margin-top: 2vh;
-}
-.form-control > input {
-  margin-top: 2px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-.form-control > label {
-  color: white;
+  position: relative;
 }
 .services-detail-heroLeftInner > button {
   margin: 10px;
@@ -646,6 +691,15 @@ footer {
 }
 .services-detail-heroRight {
   display: inline;
+  overflow: hidden;
+  height: auto;
+}
+.services-detail-heroRight img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 .services-detail-heroFormContainer {
   display: grid;
@@ -668,6 +722,35 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.form-control {
+  display: grid;
+
+  text-align: left;
+}
+.form-control > button {
+  width: 200%;
+  background-color: rgb(218, 114, 66);
+  border-radius: 10px;
+  height: 5vh;
+  margin-top: 2vh;
+}
+.form-control-button {
+  display: grid;
+  grid-column: span 2;
+}
+.form-control > input {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form-control > label {
+  color: white;
+}
+
 .services-detail-validation {
   display: flex;
   flex-direction: row;
@@ -676,17 +759,18 @@ footer {
   padding-bottom: 10vh;
 
   border-radius: 0 0 250% 250%/0 0 500% 500%;
+  border-bottom: 1px solid blue;
 
   /* clip-path: circle(84% at 51% 1%); */
 }
-.services-detail-clipPath {
+/* .services-detail-clipPath {
   height: 41.447508vh;
   width: 100%;
 
   border-bottom: 2px solid blue;
   border-radius: 0 0 250% 250%/0 0 500% 500%;
   margin-top: -40vh;
-}
+} */
 
 .services-detail-main {
   width: 45vw;
@@ -709,6 +793,7 @@ footer {
 }
 .services-detail-mainRight > img {
   border-radius: 5%;
+  width: 15vw;
 }
 .services-detail-single-impress {
   display: flex;
@@ -853,4 +938,454 @@ footer {
 .services-detail-latestRight {
   display: grid;
   background-color: rgb(0, 0, 0);
+}
+
+/******************************PROJECTS PAGE*********************************/
+.projects-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aliceblue;
+
+  padding-bottom: 15vh;
+  padding-top: 15vh;
+  margin-bottom: 5vh;
+  border-radius: 0 0 250% 250%/0 0 500% 500%;
+  border-bottom: 1px solid blue;
+  outline-offset: 10px;
+}
+.projects-carousel {
+  width: 40vw;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 50vh;
+}
+.projects-carousel-img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.custom-dot {
+  border: none;
+  padding: 1vh 1vw;
+  outline: none;
+  background-color: white;
+}
+.custom-dot > div > img {
+  width: 100px;
+  height: 100px;
+  border: none;
+
+  outline: none;
+}
+.custom-dot--active > div > img {
+  width: 100px;
+  transform: scale(1.1);
+  outline: auto;
+}
+.custom-dot--active {
+  transform: scale(1.1);
+  outline: auto;
+}
+
+.projects-carousel-dots {
+  flex-wrap: wrap;
+}
+.validation-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aliceblue;
+  padding-bottom: 10vh;
+
+  border-radius: 250% 250% 0 0 /500% 500% 0 0;
+  border-top: 1px solid blue;
+  margin-top: 10vh;
+}
+
+/*********************ABOUT********************/
+.about {
+  display: grid;
+  align-items: center;
+
+  margin: auto;
+  background-color: aliceblue;
+}
+.about-title {
+  text-align: center;
+  padding: 5vh 0;
+}
+.about-title-logo {
+  height: 200px;
+  margin-bottom: -5vh;
+}
+.about-description-main {
+  display: flex;
+  width: 45vw;
+  margin: auto;
+}
+.about-description-letters {
+  flex: 2;
+
+  padding: 0 3vw;
+}
+.about-description-image {
+  width: 40%;
+}
+.about-description-image > img {
+  height: 100%;
+  width: 100%;
+}
+.validation-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aliceblue;
+  padding-bottom: 10vh;
+
+  border-radius: 0 0 250% 250%/0 0 500% 500%;
+  border-bottom: 1px solid blue;
+  padding-top: 10vh;
+}
+.calltoaction-about {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  margin-bottom: 15vh;
+
+  background-image: url("/src/assets/dallasSkylineVector.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+/************** CONTACT PAGE (BOOK A HANDYMAN) *********/
+.contact-title {
+  text-align: center;
+  padding: 15vh 0;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+
+  border-radius: 0 0 250% 250%/0 0 500% 500%;
+  border-bottom: 1px solid blue;
+}
+.contact-title-logo {
+  height: 200px;
+  margin-bottom: -5vh;
+}
+.contact-form-container {
+  display: grid;
+  width: 25vw;
+  margin: -10vh auto 30vh auto;
+  background-color: #ffffff;
+  padding: 7vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-form > h1 {
+  color: white;
+  font-size: xx-large;
+}
+
+.contact-form {
+  justify-content: left;
+}
+.contact-form > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form > form > .form-control > label {
+  color: black;
+}
+.projects-carousel-item {
+  align-self: center;
+}
+
+/*******************RESPONSIVE DESIGN********************/
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .validation {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .navbar-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: aliceblue;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+  .hero {
+    height: fit-content;
+  }
+  .services {
+    width: 95vw;
+    margin: auto;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+  .service-tile-img-norm > svg {
+    width: 60px;
+    height: 60px;
+  }
+  .validation {
+    flex-direction: column;
+  }
+  .whyUs {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    padding-top: 10vh;
+  }
+  .whyUs-left {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+  .whyUs-left > pre {
+    text-align: center;
+  }
+  .whyUs-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+    column-gap: 15px;
+  }
+  .whyUs-right > .whyUsTile-component > h2 {
+    font-size: 1.15rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .projects-left {
+    justify-content: center;
+    justify-items: center;
+  }
+  .review-tile-review {
+    flex-direction: column;
+  }
+
+  .calltoaction-bubble {
+    width: 90vw;
+  }
+  .servicesPage-hero {
+    grid-template-columns: 1fr;
+    width: fit-content;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    margin: auto;
+  }
+  .servicesPage-heroLeft {
+    margin: auto;
+    width: 90vw;
+    justify-items: center;
+  }
+  .validationServices {
+    flex-direction: column;
+  }
+  .servicesPage-heroRight {
+    width: 200px;
+    height: 200px;
+    outline: 0px;
+    margin-top: 50px;
+    outline: 0px;
+  }
+  .services-allServices {
+    padding-top: 5vh;
+  }
+  .services-commitment {
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+  }
+  .services-commitmentLeft {
+    width: 90vw;
+  }
+  .services-commitmentRight > img {
+    width: 200px;
+    margin: auto;
+  }
+  .services-detail-hero {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .services-detail-heroFormContainer {
+    width: 90vw;
+  }
+  .services-detail-heroLeft {
+    padding-bottom: 0%;
+    margin-bottom: -5%;
+  }
+  .services-detail-heroLeftInner {
+    display: grid;
+
+    background-color: #2fc1d4;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+    position: relative;
+  }
+  .services-detail-heroFormTitle {
+    text-align: center;
+    width: 100%;
+  }
+  .services-detail-validation {
+    flex-direction: column;
+    border-radius: 0 0 100% 100%/0 0 25% 25%;
+    margin: auto;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  .services-detail-main {
+    width: 90vw;
+    grid-template-columns: 1fr;
+  }
+  .services-detail-mainLeft {
+    width: 100%;
+  }
+  .services-detail-mainRight > img {
+    width: 100%;
+  }
+  .services-detail-single-impress {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .services-detail-single-impress-qualifier {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+  }
+  .services-detail-single-impress-list {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+  }
+  .services-detail-calltoaction {
+    flex-direction: column;
+    text-align: center;
+  }
+  .services-detail-calltoaction-logo {
+    width: 100%;
+  }
+  .services-detail-faq {
+    padding: 7vh 5vw;
+    text-align: center;
+  }
+  .services-detail-latest {
+    grid-template-columns: 1fr;
+  }
+  .services-detail-latestLeft {
+    justify-content: center;
+    justify-items: center;
+  }
+  .services-detail-latestLeft > h3 {
+    font-size: 2rem;
+  }
+  .services-detail-latestLeft > h2 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .services-detail-latestRight {
+    background-color: #ffffff;
+  }
+  .projects-hero {
+    border-radius: 0 0 100% 100%/0 0 25% 25%;
+  }
+  .projects-carousel {
+    width: 95vw;
+    padding-bottom: 100vh;
+  }
+  .projects-carousel-dots {
+    padding-top: 10vh;
+  }
+  .validation-projects {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100% 100% 0 0 /25% 25% 0 0;
+    padding-top: 5vh;
+  }
+  .about-description-main {
+    width: 90vw;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .validation-about {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 100% 100%/0 0 25% 25%;
+  }
+  .contact-title {
+    border-radius: 0 0 100% 100%/0 0 25% 25%;
+    padding: 3vh 0 15vh 0;
+  }
+  .contact-form-container {
+    width: 85vw;
+  }
+  .contact-form > form {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .footer {
+    width: fit-content;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5vw;
+  }
 }

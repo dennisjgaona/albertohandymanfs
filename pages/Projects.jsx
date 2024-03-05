@@ -1,37 +1,62 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
+import Carousel, { CarouselWithCustomDots } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { tempGallery, validationComp } from "../utils";
 import ValidationComponent from "../components/ValidationComponent";
+import Button from "../components/Button";
 
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 1,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 1,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 3,
+    items: 1,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 3,
+    items: 1,
   },
 };
+
+const images = tempGallery.map((component) => {
+  return (
+    <div>
+      <img src={component.imgSrc} alt="gallery-image" />
+    </div>
+  );
+});
+
+const CustomDot = ({ index, onClick, active }) => {
+  return (
+    <button
+      onClick={(e) => {
+        onClick();
+        e.preventDefault();
+      }}
+      className={active ? "custom-dot--active" : "custom-dot"}
+    >
+      {React.Children.toArray(images)[index]}
+    </button>
+  );
+};
+
 export default function Projects() {
   return (
     <>
-      <div>
+      <div className="projects-hero">
         <h1>Our Work</h1>
       </div>
       <div>
         <Carousel
           swipeable={false}
+          slidesToSlide={1}
           draggable={false}
           showDots={true}
           responsive={responsive}
@@ -42,22 +67,31 @@ export default function Projects() {
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
-          containerClass="projects-right"
-          dotListClass="custom-dot-list-style"
-          itemClass="projects-carousel-item"
+          renderButtonGroupOutside={true}
+          containerClass="projects-carousel"
+          itemClass="projects-carousel-img"
+          dotListClass="projects-carousel-dots"
+          customDot={<CustomDot />}
         >
           {tempGallery.map((component) => {
             return (
-              <img
-                src={component.imgSrc}
-                style={{ width: "200px" }}
-                alt="gallery-image"
-              />
+              <div>
+                <img
+                  src={component.imgSrc}
+                  alt="gallery-image"
+                  style={{
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    height: "auto",
+                  }}
+                />
+              </div>
             );
           })}
         </Carousel>
       </div>
-      <div className="validation">
+
+      <div className="validation-projects">
         {validationComp.map((component) => {
           return (
             <ValidationComponent
@@ -68,10 +102,46 @@ export default function Projects() {
           );
         })}
       </div>
-      <div>
-        <h1>Ready to get started on your project?</h1>
-        <h3>Schedule your FREE consultation</h3>
-        <button>Book Now!</button>
+      <div className="calltoaction">
+        <div className="calltoaction-bubble">
+          <h2
+            style={{
+              fontSize: "xx-large",
+              color: "#1c6b88",
+              fontWeight: "700",
+              lineHeight: "1",
+            }}
+          >
+            Ready to get started?
+          </h2>
+          <h3
+            style={{
+              fontSize: "x-large",
+              color: "##fc5130",
+              fontWeight: "600",
+              lineHeight: "1",
+            }}
+          >
+            Schedule for your FREE consultation
+          </h3>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            justifySelf="center"
+          >
+            Book A HandyMan
+          </Button>
+        </div>
       </div>
     </>
   );

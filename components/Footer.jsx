@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+
 import Logo from "../src/assets/Logo";
 import Button from "/components/Button";
 import { IconContext } from "react-icons";

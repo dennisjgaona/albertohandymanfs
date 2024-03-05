@@ -3,13 +3,7 @@ import React from "react";
 export default function ReviewTile({ imgSrc, description, name }) {
   return (
     <div className="review-tile">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+      <div className="review-tile-review">
         <p>⭐⭐⭐⭐⭐</p>
         <img src={imgSrc} alt="review-source" style={{ height: "3vh" }}></img>
       </div>

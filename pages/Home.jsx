@@ -39,7 +39,10 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30,
+    centerSlidePercentage: 90,
+
+    swipeable: true,
+    draggable: true,
   },
 };
 
@@ -232,17 +235,19 @@ export default function Home() {
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
-            centerMode={false}
+            centerMode
+            centerSlidePercentage={90}
             autoPlay={true}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={5000}
             keyBoardControl={true}
             customTransition="all .5"
+            focusOnSelect={true}
             transitionDuration={500}
+            minimumTouchDrag={80}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item"
-            partialVisible={true}
           >
             {reviewComp.map((component) => {
               return (
@@ -305,8 +310,33 @@ export default function Home() {
           <Carousel
             swipeable={true}
             draggable={true}
-            showDots={false}
-            responsive={responsive}
+            showDots={true}
+            responsive={{
+              superLargeDesktop: {
+                // the naming can be any, depends on you.
+                breakpoint: { max: 4000, min: 3000 },
+                items: 4,
+                partialVisibilityGutter: 40,
+              },
+              desktop: {
+                breakpoint: { max: 3000, min: 1024 },
+                items: 4,
+                partialVisibilityGutter: 40,
+              },
+              tablet: {
+                breakpoint: { max: 1024, min: 464 },
+                items: 3,
+                partialVisibilityGutter: 30,
+              },
+              mobile: {
+                breakpoint: { max: 464, min: 0 },
+                items: 3,
+                centerSlidePercentage: 90,
+
+                swipeable: true,
+                draggable: true,
+              },
+            }}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
             centerMode={false}

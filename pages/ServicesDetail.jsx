@@ -9,25 +9,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Button from "../components/Button";
 import Logo from "../src/assets/Logo";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 3,
-  },
-};
 
 export default function ServicesDetail() {
   const [data, setData] = useState({});
@@ -160,9 +141,26 @@ export default function ServicesDetail() {
                     )}
                   </div>
 
-                  <div className="form-control">
+                  <div className="form-control-button">
                     <label></label>
-                    <button type="submit">Send Email</button>
+                    <Button
+                      linkTo="/book-a-handyman"
+                      background-color="#fc5130"
+                      display="flex"
+                      color="white"
+                      flexDirection="column"
+                      justifyContent="center"
+                      fontSize="16px"
+                      textAlign="center"
+                      border="none"
+                      width="125px"
+                      height="60px"
+                      borderRadius="12px"
+                      justifySelf="center"
+                      type="submit"
+                    >
+                      Send Email
+                    </Button>
                   </div>
                 </form>
               </div>
@@ -170,7 +168,7 @@ export default function ServicesDetail() {
           </div>
         </div>
         <div className="services-detail-heroRight">
-          <img></img>
+          <img src={data && data.heroImg}></img>
         </div>
       </div>
       <div className="services-detail-validation ">
@@ -184,7 +182,6 @@ export default function ServicesDetail() {
           );
         })}
       </div>
-      <div className="services-detail-clipPath"></div>
 
       <div className="services-detail-main">
         <div className="services-detail-mainLeft">
@@ -298,14 +295,55 @@ export default function ServicesDetail() {
         <div className="services-detail-latestLeft">
           <h3>Check out</h3>
           <h2>Our Latest Projects!</h2>
-          <button> View More</button>
+          <Button
+            linkTo="/book-a-handyman"
+            background-color="#30bced"
+            display="flex"
+            color="white"
+            flexDirection="column"
+            justifyContent="center"
+            fontSize="16px"
+            textAlign="center"
+            border="none"
+            width="125px"
+            height="60px"
+            borderRadius="12px"
+            justifySelf="center"
+          >
+            View More!
+          </Button>
         </div>
         <div className="services-detail-latestRight">
           <Carousel
             swipeable={false}
             draggable={false}
             showDots={true}
-            responsive={responsive}
+            responsive={{
+              superLargeDesktop: {
+                // the naming can be any, depends on you.
+                breakpoint: { max: 4000, min: 3000 },
+                items: 4,
+                partialVisibilityGutter: 40,
+              },
+              desktop: {
+                breakpoint: { max: 3000, min: 1024 },
+                items: 4,
+                partialVisibilityGutter: 40,
+              },
+              tablet: {
+                breakpoint: { max: 1024, min: 464 },
+                items: 3,
+                partialVisibilityGutter: 30,
+              },
+              mobile: {
+                breakpoint: { max: 464, min: 0 },
+                items: 2,
+                centerSlidePercentage: 30,
+
+                swipeable: true,
+                draggable: true,
+              },
+            }}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
             autoPlay={false}
@@ -316,6 +354,7 @@ export default function ServicesDetail() {
             containerClass="services-detail-latestRight"
             dotListClass="custom-dot-list-style"
             itemClass="projects-carousel-item"
+            centerMode
           >
             {tempGallery.map((component) => {
               return (

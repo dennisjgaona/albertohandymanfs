@@ -35,12 +35,12 @@ export default function ServicesMain() {
           <h1>HandyMan Services!</h1>
           <p>
             We find that most people can easily make a list of at least 10 items
-            around their house that they would like to repair or update.
-            Perhapsyour “HoneyDew” list has managed to remain a “HoneyDidn't”
-            list. The Chicago Handy team is happy to help complete even the
-            smallest tasks for you. From tightening kitchen hardware and
-            doorknobs, to rescreening your back door or installing a
-            Wall-Mounted Flat Screen TV, we have you covered!
+            around their house that they would like to repair or update. Perhaps
+            your “HoneyDo” list has managed to remain a “HoneyDidn't” list. Our
+            team is happy to help complete even the smallest tasks for you. From
+            tightening kitchen hardware and doorknobs, to rescreening your back
+            door or installing a Wall-Mounted Flat Screen TV, we have you
+            covered!
           </p>
           <p>
             We guarantee to provide you with a significant value for the cost of
