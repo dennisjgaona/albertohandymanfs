@@ -320,7 +320,7 @@ export const servicesPagesInfo = [
     mainTitle: "Professional painting & drywall replacement",
     mainDescription: `A fresh coat of paint on a wall, when professionally applied, can make a world of difference when it comes to the look and feel of a room. 
       
-      Chicago Handy has the knowledge and experience needed to provide you with great results at affordable prices.But no matter how good we are at painting, a wall with holes or wear and tear won't look too good even with a fresh paint job. That's why we also take the time to repair your drywall beforehand to offer the best results possible. And that includes repairing water damaged drywall.
+      Alberto's HandyMan Co. has the knowledge and experience needed to provide you with great results at affordable prices. But no matter how good we are at painting, a wall with holes or wear and tear won't look too good even with a fresh paint job. That's why we also take the time to repair your drywall beforehand to offer the best results possible. And that includes repairing water damaged drywall.
       
       Wet drywall loses its structural integrity and becomes weak, causing holes and other issues. If you have water damage in your drywall, we'll remove the damaged areas and replace with new drywall. We professionally apply a joining compound for a seamless look and when painted, you're left with your wall looking brand new.`,
     imgSrc:
@@ -340,7 +340,7 @@ And sealing windows and doors can help save money on your heating and cooling bi
 
 Over time (or with improper installation), caulking and grout can degrade and will need to be replaced to maintain their seal.
 
-Chicago Handy has years of experience ensuring your caulking and grout has a proper seal, preserving your countertops, tile floors, and more.`,
+Alberto's HandyMan Co. has years of experience ensuring your caulking and grout has a proper seal, preserving your countertops, tile floors, and more.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/Grout-repair-and-caulking-replacement.jpg",
     heroImg:
@@ -356,11 +356,11 @@ Not only is properly installed tile durable, it is easy to clean, easy to mainta
 
 However, improperly installed tile can be uneven and not very durable.
 
-That's why it's important to have professionals, like the Chicago Handy team, install your tile.
+That's why it's important to have professionals, like the Alberto's HandyMan Co. team, install your tile.
 
 And we also install kitchen backsplashes to help add a unique aesthetic touch to your kitchen!
 
-Whatever the tile or backsplash project, Chicago Handy can install everything professionally and in a timely manner.`,
+Whatever the tile or backsplash project, Alberto's HandyMan Co. can install everything professionally and in a timely manner.`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/05/Norbert-Sienko-Powder-room-tile-installation.jpg",
     heroImg:
@@ -374,13 +374,13 @@ Whatever the tile or backsplash project, Chicago Handy can install everything pr
 
 And an improperly installed door can not only be a little annoying to use, but can also be much less safe and allow air to escape, costing you more money.
 
-Chicago Handy has many years experience installing doors to improve the aesthetics of your home while also allowing you to take full advantage of the benefits of doors.
+Alberto's HandyMan Co. has many years experience installing doors to improve the aesthetics of your home while also allowing you to take full advantage of the benefits of doors.
 
 That goes for locks too!
 
 Locks are a huge part of keeping your house safe and secure, so we take the time to make sure they are installed correctly.
 
-Whether it's an exterior door to update the look of your house or an interior door to replace an old one, give Chicago Handy a call to get it done right!`,
+Whether it's an exterior door to update the look of your house or an interior door to replace an old one, give Alberto's HandyMan Co. a call to get it done right!`,
     imgSrc:
       "https://chicagohandy.com/wp-content/uploads/2020/07/house-1407562_1920.jpg",
     heroImg:
@@ -392,7 +392,7 @@ Whether it's an exterior door to update the look of your house or an interior do
     mainTitle: "Professional plumbing services",
     mainDescription: `Having a leak or other light plumbing issues can not only waste water, but they can cause water damage to nearby countertops, walls, and more, costing you thousands of dollars.
 
-When your pipes are leaking, you need a toilet repaired or replaced, you need your garbage disposal repaired, or any other plumbing issue, call Chicago Handy.
+When your pipes are leaking, you need a toilet repaired or replaced, you need your garbage disposal repaired, or any other plumbing issue, call Alberto's HandyMan Co..
 
 We have many years of experience working with plumbing systems and are happy to help fix your plumbing issue`,
     imgSrc:
@@ -404,7 +404,7 @@ We have many years of experience working with plumbing systems and are happy to 
     id: "furniture-assy",
     heroName: "Furniture Assembly Assistance",
     mainTitle: "We help out with complex or heavy furniture assembly",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    mainDescription: `Assembling furniture can be a daunting task, especially when faced with a barrage of confusing instructions and countless tiny pieces. That's where Alberto's HandyMan Co. comes in. Our team of experienced technicians specializes in furniture assembly, taking the stress and hassle out of the process for you. Whether it's a simple bookshelf or a complex bedroom set, we have the skills and tools to get the job done quickly and efficiently. We carefully follow manufacturer instructions to ensure that your furniture is assembled correctly the first time, saving you time and frustration. With Alberto's HandyMan Co., you can enjoy your new furniture without the headache of assembly.`,
     imgSrc:
       "https://www.leatherman.com/on/demandware.static/-/Library-Sites-leatherman-shared2020/default/dw7a20553f/blog/home/diy/7-hacks-for-assembling-furniture/AssemblingFurniture-full.jpg",
     heroImg:
@@ -414,7 +414,7 @@ We have many years of experience working with plumbing systems and are happy to 
     id: "water-damage-repair",
     heroName: "Water Damage Repair",
     mainTitle: "Replace water damaged walls, sheetrock, carpet, etc.",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Sed tempus urna et pharetra pharetra massa massa. Turpis in eu mi bibendum neque egestas congue. Sapien pellentesque habitant morbi tristique senectus et. Non enim praesent elementum facilisis. Vulputate eu scelerisque felis imperdiet proin fermentum. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Nec sagittis aliquam malesuada bibendum. Lorem sed risus ultricies tristique nulla aliquet enim. Nisl tincidunt eget nullam non.`,
+    mainDescription: `Water damage can wreak havoc on your home, causing structural issues, mold growth, and even health hazards. At Alberto's HandyMan Co., we understand the urgency of addressing water damage promptly and effectively. Our team of experts is equipped with the knowledge and tools to assess the extent of the damage and develop a comprehensive repair plan tailored to your specific needs. Whether it's a burst pipe, a leaking roof, or flooding from a storm, we have the experience to restore your home to its pre-damaged condition. From water extraction and drying to repairing damaged materials and preventing mold growth, we handle every aspect of the restoration process with precision and care. With Alberto's HandyMan Co., you can trust that your home is in capable hands, and we'll work tirelessly to ensure that your property is restored to its former glory.`,
     imgSrc:
       "https://www.ezgreen-service.com/wp-content/uploads/2022/11/Water-Damage-Repair-1024x768-1.jpg",
     heroImg:
@@ -424,7 +424,7 @@ We have many years of experience working with plumbing systems and are happy to 
     id: "fireplace-tile-install",
     heroName: "Fireplace Tile Installation",
     mainTitle: "We install beautiful fireplace tiles",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nisl rhoncus mattis rhoncus urna neque viverra. Massa enim nec dui nunc mattis enim. Elementum nibh tellus molestie nunc non blandit massa enim nec. Sed euismod nisi porta lorem mollis aliquam ut. A lacus vestibulum sed arcu non odio euismod lacinia. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquam sem fringilla ut morbi tincidunt augue. Ipsum a arcu cursus vitae congue. Nibh praesent tristique magna sit amet purus gravida quis. Cras pulvinar mattis nunc sed blandit libero volutpat. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.`,
+    mainDescription: `Transforming your fireplace with new tile can breathe new life into your living space, adding style and sophistication to your home. At Alberto's HandyMan Co., we specialize in fireplace tile installation, offering expert craftsmanship and attention to detail. Whether you're looking to create a sleek modern look or a cozy rustic feel, our team has the expertise to bring your vision to life. We'll work closely with you to choose the perfect tile that complements your existing decor and fits your aesthetic preferences. From preparing the surface to precision cutting and installation, we take pride in delivering flawless results that exceed your expectations. With Alberto's HandyMan Co., you can trust that your fireplace tile installation will be completed with the utmost care and professionalism, leaving you with a stunning focal point that enhances the beauty and value of your home.`,
     imgSrc:
       "https://thehappierhomemaker.com/wp-content/uploads/2019/01/tile-fireplace-surround-diy.jpg",
     heroImg:
@@ -434,7 +434,7 @@ We have many years of experience working with plumbing systems and are happy to 
     id: "leak-repair",
     heroName: "Leaky Pipes Repair",
     mainTitle: "We identify and fix leaky pipes",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus vitae. Ultricies mi quis hendrerit dolor magna eget est lorem. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Scelerisque purus semper eget duis at tellus at. Id semper risus in hendrerit gravida. Ornare lectus sit amet est placerat in egestas. Rhoncus mattis rhoncus urna neque viverra justo. Aliquet enim tortor at auctor. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Pharetra pharetra massa massa ultricies mi quis hendrerit. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed lectus vestibulum mattis ullamcorper.`,
+    mainDescription: `A leaky roof, a dripping faucet, or a burst pipe—no matter the source, leaks can cause significant damage to your home if left unchecked. At Alberto's HandyMan Co., we specialize in leak repair, offering prompt and reliable solutions to protect your property and restore your peace of mind. Our team of skilled technicians has the expertise to identify and address leaks quickly and effectively, preventing further damage and costly repairs down the line. Whether it's patching a leaky roof, fixing a broken pipe, or sealing a leaking fixture, we have the tools and knowledge to get the job done right the first time. We understand the urgency of leak repair, which is why we prioritize fast response times and efficient solutions to minimize disruption to your daily life. With Alberto's HandyMan Co., you can trust that your leak repair needs will be handled with professionalism, integrity, and care, ensuring that your home remains safe, dry, and secure for years to come.`,
     imgSrc:
       "https://library.homeserve.com/m/63ed80bb936ab0c/Blog-GettyImages-1136317145.jpg",
     heroImg:
@@ -444,7 +444,7 @@ We have many years of experience working with plumbing systems and are happy to 
     id: "carpentry",
     heroName: "Carpentry",
     mainTitle: "Get your carpentry needs met with us",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nisl pretium fusce id. Tempor nec feugiat nisl pretium fusce id velit ut. Lorem mollis aliquam ut porttitor leo a. Massa ultricies mi quis hendrerit dolor magna eget est. Feugiat scelerisque varius morbi enim nunc faucibus. Velit euismod in pellentesque massa placerat duis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Magna sit amet purus gravida quis blandit. Fermentum odio eu feugiat pretium. Commodo sed egestas egestas fringilla phasellus faucibus`,
+    mainDescription: `Carpentry is the art of crafting and shaping wood into functional and beautiful structures, furniture, and fixtures. At Alberto's HandyMan Co., we take pride in our carpentry services, offering expert craftsmanship and attention to detail for all your woodworking needs. Whether you're looking to build custom shelving, install crown molding, or repair damaged woodwork, our team of skilled carpenters has the experience and expertise to bring your vision to life. We work closely with each client to understand their unique requirements and preferences, providing personalized solutions that exceed expectations. From precise measurements and cutting to meticulous assembly and finishing, we ensure that every project is completed to the highest standards of quality and craftsmanship. With Alberto's HandyMan Co., you can trust that your carpentry project will be handled with professionalism, integrity, and care, leaving you with beautiful, long-lasting results that enhance the beauty and functionality of your home.`,
     imgSrc:
       "https://www.pikespeak.edu/_images-universal/vertical-images/carpentry-800x1200-2.jpg",
     heroImg:
@@ -455,11 +455,27 @@ We have many years of experience working with plumbing systems and are happy to 
     heroName: "Garage Door Installs and Repairs",
     mainTitle:
       "Automatic and remote control garage door repairs and installations",
-    mainDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Mattis vulputate enim nulla aliquet porttitor lacus. Eget nulla facilisi etiam dignissim diam quis enim. Id eu nisl nunc mi. Id neque aliquam vestibulum morbi blandit cursus risus. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Nunc pulvinar sapien et ligula. Porta lorem mollis aliquam ut porttitor leo.`,
+    mainDescription: `Your garage door is more than just a functional aspect of your home; it's also a critical component of your property's security and curb appeal. At Alberto's HandyMan Co., we specialize in garage door installations and repairs, offering top-notch service and expertise to ensure your garage door operates smoothly and safely.
+
+Whether you're looking to upgrade to a modern, energy-efficient model or need repairs to address issues like broken springs, damaged panels, or malfunctioning openers, our team of skilled technicians is here to help. We work with leading manufacturers to provide high-quality garage doors and parts that are built to last.
+
+Our installation process is thorough and efficient, ensuring that your new garage door is properly installed and calibrated for optimal performance. And when it comes to repairs, we respond quickly to diagnose the problem and implement effective solutions to get your garage door back in working order as soon as possible.
+
+With Alberto's HandyMan Co., you can trust that your garage door installation or repair will be completed with precision and professionalism, giving you peace of mind knowing that your property is secure and your investment is protected. Let us help you enhance the functionality and aesthetics of your home with our expert garage door services.`,
     imgSrc:
       "https://okdiscountgaragedoor.com/wp-content/uploads/2022/02/GarageDoorRepair-800x500-1.png",
     heroImg:
       "https://raynor.com/wp-content/uploads/2021/05/garage-door-repair-e1630931235655.png",
+  },
+  {
+    id: "electrician",
+    heroName: "Electrical and Wiring Necessities",
+    mainTitle: "Install or Repair Wiring, Outlets, and Switches",
+    mainDescription: ` When it comes to electrical repairs, safety and expertise are paramount. Faulty wiring or electrical fixtures not only pose a risk to your property but also to your family's safety. At Alberto's HandyMan Co., we understand the importance of addressing electrical issues promptly and correctly. Our team of skilled technicians is well-versed in diagnosing and repairing a wide range of electrical problems, from faulty outlets to wiring issues. Whether you need a simple outlet replacement or a complete rewiring of your home, you can trust Alberto's HandyMan Co. to get the job done safely and efficiently. With our attention to detail and commitment to quality craftsmanship, you can have peace of mind knowing that your electrical repairs are in capable hands.`,
+    imgSrc:
+      "https://mrelectric.com/us/en-us/mr-electric/_assets/images/Blog/mre-blog-replace-two-prong-.webp",
+    heroImg:
+      "https://techiezer.com/wp-content/uploads/2022/04/replace-electrical-outlets.jpeg",
   },
 ];
 
