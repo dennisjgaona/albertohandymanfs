@@ -14,14 +14,17 @@ export default function ServicesDetail() {
   const [data, setData] = useState({});
   const [successMsg, setSuccessMsg] = useState("");
 
+  const [labelName, setLabelName] = useState("");
   const {
     register,
     reset,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (e, data) => {
+    e.preventDefault();
     console.log(data);
     setSuccessMsg("Email was successfully sent!");
     reset();
@@ -47,18 +50,17 @@ export default function ServicesDetail() {
                   {successMsg && <p className="success-msg">{successMsg}</p>}
 
                   <div className="form-control">
-                    <label>First Name*</label>
+                    <label>{`First Name* ${labelName}`}</label>
                     <input
                       type="text"
                       name="firstName"
                       placeholder="Your First Name"
                       {...register("firstName", {
-                        required: "First Name is required.",
+                        required: true,
                       })}
+                      aria-invalid={errors.firstName ? "true" : "false"}
                     />
-                    {errors.firstName && (
-                      <p className="errorMsg">{errors.firstName.message}</p>
-                    )}
+                    {errors.firstName}
                   </div>
 
                   <div className="form-control">
@@ -143,8 +145,8 @@ export default function ServicesDetail() {
 
                   <div className="form-control-button">
                     <label></label>
+                    <input type="submit" />
                     <Button
-                      linkTo="/book-a-handyman"
                       background-color="#fc5130"
                       display="flex"
                       color="white"

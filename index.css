@@ -1111,6 +1111,10 @@ footer {
   align-self: center;
 }
 
+.errorMsg {
+  color: red;
+}
+
 /*******************RESPONSIVE DESIGN********************/
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {

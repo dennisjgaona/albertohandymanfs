@@ -246,6 +246,11 @@ export const tempGallery = [
   {
     imgSrc:
       "https://us1-photo.nextdoor.com/business_gallery/d4/01/d401956f3dbc0c4d5f939584cc2ea8db.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: "",
+    before: true,
+    service: "plumbing",
+    date: "09/18/1997",
+    projectName: "AlexHouseDoorProject",
   },
   {
     imgSrc:
