@@ -24,6 +24,8 @@ import { GiLeak } from "react-icons/gi";
 
 import { PiGarageLight } from "react-icons/pi";
 
+
+
 export const validationComp = [
   {
     title: "Lifelong Career Professional",
@@ -244,78 +246,445 @@ export const reviewComp = [
 
 export const tempGallery = [
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/d4/01/d401956f3dbc0c4d5f939584cc2ea8db.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
-    id: "",
-    before: true,
-    service: "plumbing",
-    date: "09/18/1997",
-    projectName: "AlexHouseDoorProject",
+    id: 0,
+    filePath: '/src/assets/gallery/gallery_AC_ACRepair_after_1.jpeg',
+    projType: 'AC',
+    projName: 'ACRepair',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/a6/00/a60039fc2aceeeaaaec1dcecb82d74ab.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 1,
+    filePath: '/src/assets/gallery/gallery_carpenter_fenceRepair_after_1.jpeg',
+    projType: 'carpenter',
+    projName: 'fenceRepair',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/7c/7a/7c7adb63cedf614ca27024df5032b6e7.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 2,
+    filePath: '/src/assets/gallery/gallery_carpenter_roomRepair_after_1.jpeg',
+    projType: 'carpenter',
+    projName: 'roomRepair',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/69/ab/69ab158d1c3d37961d49b6478d7c749a.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 3,
+    filePath: '/src/assets/gallery/gallery_carpenter_fenceRepair_before_1.jpeg',
+    projType: 'carpenter',
+    projName: 'fenceRepair',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/43/fd/43fd7ad9b2b98bdfef3e99950a78ab18.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 4,
+    filePath: '/src/assets/gallery/gallery_door_doorInstall_after_1.jpeg',
+    projType: 'door',
+    projName: 'doorInstall',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/2d/be/2dbee170a6e55c12b0bc6242db32cac0.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 5,
+    filePath: '/src/assets/gallery/gallery_carpenter_roomRepair_before_1.jpeg',
+    projType: 'carpenter',
+    projName: 'roomRepair',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/16/80/168041e899209df96e37a57271dc127f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 6,
+    filePath: '/src/assets/gallery/gallery_door_doorInstall_before_1.jpeg',
+    projType: 'door',
+    projName: 'doorInstall',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/3d/7e/3d7ee961962e5f85e529324c0bb1f83e.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 7,
+    filePath: '/src/assets/gallery/gallery_door_doorInstall_after_2.jpeg',
+    projType: 'door',
+    projName: 'doorInstall',
+    photoType: 'after',
+    photoNum: '2'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/f7/8d/f78d111c6186913e3d3ca099760bdd37.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 8,
+    filePath: '/src/assets/gallery/gallery_door_doorInstall_before_2.jpeg',
+    projType: 'door',
+    projName: 'doorInstall',
+    photoType: 'before',
+    photoNum: '2'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/5a/8e/5a8eda4127cfc6add83b75ae1755fa6b.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 9,
+    filePath: '/src/assets/gallery/gallery_door_sideDoorInstall_after_1.jpeg',
+    projType: 'door',
+    projName: 'sideDoorInstall',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/bf/40/bf403e3bb37e3e4fef0c01081ff34620.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 10,
+    filePath: '/src/assets/gallery/gallery_door_sideDoorInstall_before_1.jpeg',
+    projType: 'door',
+    projName: 'sideDoorInstall',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/c1/1e/c11eb813ded8bc7a19611e91b48d8d49.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 11,
+    filePath: '/src/assets/gallery/gallery_electric_boilerReplacement_after_1.jpeg',
+    projType: 'electric',
+    projName: 'boilerReplacement',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/fe/f1/fef101d58d6c89279d944fa4516f2370.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 12,
+    filePath: '/src/assets/gallery/gallery_electric_ceilingLightInstall_before_1.jpeg',
+    projType: 'electric',
+    projName: 'ceilingLightInstall',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/ca/d9/cad993d63febbf4e2f19e52f428946fa.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 13,
+    filePath: '/src/assets/gallery/gallery_electric_boilerReplacement_before_1.jpeg',
+    projType: 'electric',
+    projName: 'boilerReplacement',
+    photoType: 'before',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/91/1e/911e6e98444b477f4e1732e6791ca11f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 14,
+    filePath: '/src/assets/gallery/gallery_electric_ceilingLightInstall_after_1.jpeg',
+    projType: 'electric',
+    projName: 'ceilingLightInstall',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://us1-photo.nextdoor.com/business_gallery/54/33/5433094d4b9bd2bd4a5c36b8f72c306f.jpeg?request_version=v2&output_type=jpeg&sizing=linear&x_size=6&resize_type=max",
+    id: 15,
+    filePath: '/src/assets/gallery/gallery_electric_outsideLamp_after_1.jpeg',
+    projType: 'electric',
+    projName: 'outsideLamp',
+    photoType: 'after',
+    photoNum: '1'
   },
   {
-    imgSrc:
-      "https://media.istockphoto.com/id/1492434373/vector/illustration-cartoon-style-of-repairman-standing-with-arms-crossed-confident-posture-wearing.jpg?s=612x612&w=0&k=20&c=VtkFLJr7bHG2Ncqbas-9Va64fPQca4sw_prIqeXoKXg=",
+    id: 16,
+    filePath: '/src/assets/gallery/gallery_electric_outsideLamp_after_2.jpeg',
+    projType: 'electric',
+    projName: 'outsideLamp',
+    photoType: 'after',
+    photoNum: '2'
   },
+  {
+    id: 17,
+    filePath: '/src/assets/gallery/gallery_electric_outsidePower_after_1.jpeg',
+    projType: 'electric',
+    projName: 'outsidePower',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 18,
+    filePath: '/src/assets/gallery/gallery_electric_outsidePower_after_2.jpeg',
+    projType: 'electric',
+    projName: 'outsidePower',
+    photoType: 'after',
+    photoNum: '2'
+  },
+  {
+    id: 19,
+    filePath: '/src/assets/gallery/gallery_electric_outsideLamp_before_1.jpeg',
+    projType: 'electric',
+    projName: 'outsideLamp',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 20,
+    filePath: '/src/assets/gallery/gallery_general_christmasDecorFrontDoor_after_1.jpeg',
+    projType: 'general',
+    projName: 'christmasDecorFrontDoor',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 21,
+    filePath: '/src/assets/gallery/gallery_general_christmasDecorFrontDoor_after_2.jpeg',
+    projType: 'general',
+    projName: 'christmasDecorFrontDoor',
+    photoType: 'after',
+    photoNum: '2'
+  },
+  {
+    id: 22,
+    filePath: '/src/assets/gallery/gallery_general_christmasDecorFrontDoor_before_1.jpeg',
+    projType: 'general',
+    projName: 'christmasDecorFrontDoor',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 23,
+    filePath: '/src/assets/gallery/gallery_general_foundationRepair_after_1.jpeg',
+    projType: 'general',
+    projName: 'foundationRepair',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 24,
+    filePath: '/src/assets/gallery/gallery_general_foundationRepair_before_1.jpeg',
+    projType: 'general',
+    projName: 'foundationRepair',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 25,
+    filePath: '/src/assets/gallery/gallery_general_outsideWineCool_after_1.jpeg',
+    projType: 'general',
+    projName: 'outsideWineCool',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 26,
+    filePath: '/src/assets/gallery/gallery_general_vanLogo_after_1.jpeg',
+    projType: 'general',
+    projName: 'vanLogo',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 27,
+    filePath: '/src/assets/gallery/gallery_general_stumpRemoval_after_1.jpeg',
+    projType: 'general',
+    projName: 'stumpRemoval',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 28,
+    filePath: '/src/assets/gallery/gallery_general_outsideWineCool_before_1.jpeg',
+    projType: 'general',
+    projName: 'outsideWineCool',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 29,
+    filePath: '/src/assets/gallery/gallery_light_lampReplace_after_1.jpeg',
+    projType: 'light',
+    projName: 'lampReplace',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 30,
+    filePath: '/src/assets/gallery/gallery_light_lampReplace_before_1.jpeg',
+    projType: 'light',
+    projName: 'lampReplace',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 31,
+    filePath: '/src/assets/gallery/gallery_plumbing_sinkMirrorRemodel_after_1.jpeg',
+    projType: 'plumbing',
+    projName: 'sinkMirrorRemodel',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 32,
+    filePath: '/src/assets/gallery/gallery_plumbing_sinkMirrorRemodel_after_2.jpeg',
+    projType: 'plumbing',
+    projName: 'sinkMirrorRemodel',
+    photoType: 'after',
+    photoNum: '2'
+  },
+  {
+    id: 33,
+    filePath: '/src/assets/gallery/gallery_plumbing_sinkMirrorRemodel_after_3.jpeg',
+    projType: 'plumbing',
+    projName: 'sinkMirrorRemodel',
+    photoType: 'after',
+    photoNum: '3'
+  },
+  {
+    id: 34,
+    filePath: '/src/assets/gallery/gallery_plumbing_sinkMirrorRemodel_before_1.jpeg',
+    projType: 'plumbing',
+    projName: 'sinkMirrorRemodel',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 35,
+    filePath: '/src/assets/gallery/gallery_tile_tileReplace_before_1.jpeg',
+    projType: 'tile',
+    projName: 'tileReplace',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 36,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_after_1.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 37,
+    filePath: '/src/assets/gallery/gallery_tile_tileReplace_after_1.jpeg',
+    projType: 'tile',
+    projName: 'tileReplace',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 38,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_after_3.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'after',
+    photoNum: '3'
+  },
+  {
+    id: 39,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_before_3.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'before',
+    photoNum: '3'
+  },
+  {
+    id: 40,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_before_2.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'before',
+    photoNum: '2'
+  },
+  {
+    id: 41,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_after_2.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'after',
+    photoNum: '2'
+  },
+  {
+    id: 42,
+    filePath: '/src/assets/gallery/gallery_tiles_showerUpgrade_before_1.jpeg',
+    projType: 'tiles',
+    projName: 'showerUpgrade',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 43,
+    filePath: '/src/assets/gallery/gallery_window_safetyBar_after_1.jpeg',
+    projType: 'window',
+    projName: 'safetyBar',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 44,
+    filePath: '/src/assets/gallery/gallery_window_safetyBar_after_2.jpeg',
+    projType: 'window',
+    projName: 'safetyBar',
+    photoType: 'after',
+    photoNum: '2'
+  },
+  {
+    id: 45,
+    filePath: '/src/assets/gallery/gallery_plumbing_sinkMirrorRemodel_before_2.jpeg',
+    projType: 'plumbing',
+    projName: 'sinkMirrorRemodel',
+    photoType: 'before',
+    photoNum: '2'
+  },
+  {
+    id: 46,
+    filePath: '/src/assets/gallery/gallery_window_safetyBar_after_3.jpeg',
+    projType: 'window',
+    projName: 'safetyBar',
+    photoType: 'after',
+    photoNum: '3'
+  },
+  {
+    id: 47,
+    filePath: '/src/assets/gallery/gallery_window_safetyBar_after_4.jpeg',
+    projType: 'window',
+    projName: 'safetyBar',
+    photoType: 'after',
+    photoNum: '4'
+  },
+  {
+    id: 48,
+    filePath: '/src/assets/gallery/gallery_window_safetyBar_before_1.jpeg',
+    projType: 'window',
+    projName: 'safetyBar',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 49,
+    filePath: '/src/assets/gallery/gallery_window_windowUpgrade_after_1.jpeg',
+    projType: 'window',
+    projName: 'windowUpgrade',
+    photoType: 'after',
+    photoNum: '1'
+  },
+  {
+    id: 50,
+    filePath: '/src/assets/gallery/gallery_window_windowUpgrade_before_1.jpeg',
+    projType: 'window',
+    projName: 'windowUpgrade',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 51,
+    filePath: '/src/assets/gallery/gallery_window_windowUpgrade_before_2.jpeg',
+    projType: 'window',
+    projName: 'windowUpgrade',
+    photoType: 'before',
+    photoNum: '2'
+  },
+  {
+    id: 52,
+    filePath: '/src/assets/gallery/gallery_electric_outsidePower_before_1.jpeg',
+    projType: 'electric',
+    projName: 'outsidePower',
+    photoType: 'before',
+    photoNum: '1'
+  },
+  {
+    id: 53,
+    filePath: '/src/assets/gallery/gallery_window_windowUpgrade_after_3.jpeg',
+    projType: 'window',
+    projName: 'windowUpgrade',
+    photoType: 'after',
+    photoNum: '3'
+  },
+  {
+    id: 54,
+    filePath: '/src/assets/gallery/gallery_window_windowUpgrade_after_2.jpeg',
+    projType: 'window',
+    projName: 'windowUpgrade',
+    photoType: 'after',
+    photoNum: '2'
+  }
 ];
 
 export const servicesPagesInfo = [
