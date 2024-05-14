@@ -28,7 +28,7 @@ const responsive = {
 const images = tempGallery.map((component) => {
   return (
     <div>
-      <img src={component.imgSrc} alt="gallery-image" />
+      <img src={component.filePath} alt="gallery-image" />
     </div>
   );
 });
@@ -77,7 +77,7 @@ export default function Projects() {
             return (
               <div>
                 <img
-                  src={component.imgSrc}
+                  src={component.filePath}
                   alt="gallery-image"
                   style={{
                     boxShadow:
