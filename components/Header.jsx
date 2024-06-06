@@ -90,9 +90,7 @@ export default function Header() {
                 {lang ? "About" : "Informacion"}
               </NavLink>
             </li>
-            <li>
-              <LangButton />
-            </li>
+
             <li>
               <NavLink to="/book-a-handyman" onClick={handleShowNavbar}>
                 <Button

@@ -9,6 +9,7 @@ import Button from "../components/Button";
 export default function Contact() {
   const [successMsg, setSuccessMsg] = useState("");
   const [date, setDate] = useState(new Date(Date.now()));
+
   const {
     register,
     reset,
@@ -18,6 +19,61 @@ export default function Contact() {
     control,
   } = useForm();
 
+  const sendData = async (data) => {
+    //event.preventDefault();
+    console.log(data);
+    if (data) {
+      setSuccessMsg("Email was successfully sent!");
+      let subject = data.firstName + " " + data.lastName;
+      let preferedDate = date.toDateString();
+      let urgency;
+      switch (data.category) {
+        case "A":
+          urgency = "Within 24 Hours";
+          break;
+        case "B":
+          urgency = "Within 24-72 Hours";
+          break;
+        case "C":
+          urgency = "Within the next week";
+          break;
+        case "D":
+          urgency = "Within 1 week or later";
+          break;
+        default:
+        // code block
+      }
+
+      let body = `Hello my name is ${data.firstName} ${data.lastName} and I would like to request service from Alberto's Handyman Co. My contact information is:%0D%0A 
+      email: ${data.email}%0D%0A
+      phone number: ${data.phoneNumber}%0D%0A
+      %0D%0A
+      A description of the work needed is as follows: ${data.description}%0D%0A
+
+      Service Address: ${data.address}  Apt. ${data.unitNumber}%0D%0A
+%0D%0A
+      My prefered date is : ${preferedDate}%0D%0A
+%0D%0A
+      Urgency of work required: ${urgency}%0D%0A
+      Please reach out at your earliest convenience! %0D%0A
+
+      Best, %0D%0A
+      ${data.firstName} ${data.lastName}
+      `;
+
+      // window.open(
+      //   `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
+      // );
+      window.open(
+        `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
+      );
+
+      reset();
+    } else {
+      setSuccessMsg("An Error Has Occured!");
+    }
+  };
+
   const handleChange = (dateChange) => {
     setValue("dateOfBirth", dateChange, {
       shouldDirty: true,
@@ -25,12 +81,12 @@ export default function Contact() {
     setDate(dateChange);
   };
 
-  const onSubmit = (data) => {
-    console.log(data);
-    setSuccessMsg("Email was successfully sent!");
-    reset();
-  };
-  console.log(errors);
+  // const onSubmit = (data) => {
+  //   console.log(data);
+  //   setSuccessMsg("Email was successfully sent!");
+  //   reset();
+  // };
+
   return (
     <>
       <div className="contact-title">
@@ -43,7 +99,7 @@ export default function Contact() {
 
       <div className="contact-form-container">
         <div className="contact-form">
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(sendData)}>
             {successMsg && <p className="success-msg">{successMsg}</p>}
 
             <div className="form-control">
@@ -121,7 +177,7 @@ export default function Contact() {
                 name="address"
                 placeholder="Your Address"
                 {...register("address", {
-                  required: "Zip code is required.",
+                  required: "Service Address is required.",
                 })}
               />
               {errors.address && (
@@ -131,12 +187,12 @@ export default function Contact() {
             <div className="form-control">
               <label>Unit #</label>
               <input
-                name="UnitNumb"
+                name="unitNumb"
                 placeholder="Unit #"
                 {...register("unitNumber", {})}
               />
-              {errors.UnitNumb && (
-                <p className="errorMsg">{errors.UnitNumb.message}</p>
+              {errors.unitNumb && (
+                <p className="errorMsg">{errors.unitNumb.message}</p>
               )}
             </div>
 
@@ -164,8 +220,8 @@ export default function Contact() {
                 <option value="">Select...</option>
                 <option value="A">Within 24 Hours</option>
                 <option value="B">Within 24-72 Hours</option>
-                <option value="B">Within the next week</option>
-                <option value="B">1 week or later</option>
+                <option value="C">Within the next week</option>
+                <option value="D">1 week or later</option>
               </select>
             </div>
             <div>
@@ -183,25 +239,8 @@ export default function Contact() {
                 )}
               />
             </div>
-            <div className="form-control">
-              <Button
-                linkTo="/book-a-handyman"
-                background-color="#30bced"
-                display="flex"
-                color="white"
-                flexDirection="column"
-                justifyContent="center"
-                fontSize="16px"
-                textAlign="center"
-                border="none"
-                width="125px"
-                height="60px"
-                borderRadius="12px"
-                justifySelf="center"
-                type="submit"
-              >
-                Submit
-              </Button>
+            <div className="form-control-button">
+              <input type="submit" />
             </div>
           </form>
         </div>

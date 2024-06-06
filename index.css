@@ -739,6 +739,20 @@ footer {
   display: grid;
   grid-column: span 2;
 }
+.form-control-button > input {
+  background-color: #30bced;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  width: 125px;
+  height: 60px;
+  border-radius: 12px;
+  justify-self: center;
+}
 .form-control > input {
   margin-top: 2px;
   margin-bottom: 10px;
@@ -749,6 +763,9 @@ footer {
 }
 .form-control > label {
   color: white;
+}
+.form-control-button > input:hover {
+  background-color: #fc5130;
 }
 
 .services-detail-validation {
@@ -959,7 +976,7 @@ footer {
   margin: auto;
   overflow-x: hidden;
   overflow-y: visible;
-  padding-bottom: 50vh;
+  padding-bottom: 5vh;
 }
 .projects-carousel-img {
   margin: auto;
@@ -992,6 +1009,9 @@ footer {
 
 .projects-carousel-dots {
   flex-wrap: wrap;
+  position: relative !important;
+  width: 65vw;
+  margin: auto !important;
 }
 .validation-projects {
   display: flex;
@@ -1103,6 +1123,7 @@ footer {
 .contact-form > form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
 .contact-form > form > .form-control > label {
   color: black;
@@ -1110,9 +1131,20 @@ footer {
 .projects-carousel-item {
   align-self: center;
 }
+.projects-image-container {
+  width: 720px;
+  height: 720px;
+}
 
 .errorMsg {
   color: red;
+}
+
+.success-msg {
+  color: green;
+  font-size: x-large;
+  grid-column: span 2;
+  text-align: center;
 }
 
 /*******************RESPONSIVE DESIGN********************/
@@ -1212,6 +1244,10 @@ footer {
   .projects-left {
     justify-content: center;
     justify-items: center;
+  }
+  .projects-image-container {
+    width: 600px;
+    height: 600px;
   }
   .review-tile-review {
     flex-direction: column;
@@ -1352,7 +1388,7 @@ footer {
   }
   .projects-carousel {
     width: 95vw;
-    padding-bottom: 100vh;
+    padding-bottom: 5vh;
   }
   .projects-carousel-dots {
     padding-top: 10vh;

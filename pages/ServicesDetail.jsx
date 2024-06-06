@@ -14,7 +14,6 @@ export default function ServicesDetail() {
   const [data, setData] = useState({});
   const [successMsg, setSuccessMsg] = useState("");
 
-  const [labelName, setLabelName] = useState("");
   const {
     register,
     reset,
@@ -23,15 +22,41 @@ export default function ServicesDetail() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (e, data) => {
-    e.preventDefault();
-    console.log(data);
-    setSuccessMsg("Email was successfully sent!");
-    reset();
+  //const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const sendData = async (data) => {
+    //event.preventDefault();
+    // await sleep(2000);
+    if (data) {
+      setSuccessMsg("Email was successfully sent!");
+      let subject = id + "-" + data.firstName + " " + data.lastName;
+
+      let body = `Hello my name is ${data.firstName} ${data.lastName} and I would like to request service from Alberto's Handyman Co. My contact information is: %0D%0A
+      email: ${data.email}%0D%0A
+      phone number: ${data.phoneNumber}%0D%0A
+
+      %0D%0A
+
+      Please reach out at your earliest convenience!
+      %0D%0A
+      
+      Service Address: ${data.address} + ${data.unitNumber}%0D%0A
+
+      Best, %0D%0A
+      ${data.firstName} ${data.lastName}
+      `;
+      window.open(
+        `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
+      );
+      reset();
+    } else {
+      setSuccessMsg("An Error Has Occured!");
+    }
   };
 
   const { id } = useParams();
   console.log(id);
+
   useEffect(() => {
     setData(servicesPagesInfo.find((obj) => obj.id === id));
   }, []);
@@ -46,11 +71,13 @@ export default function ServicesDetail() {
                 <h1>{data && data.heroName}</h1>
               </div>
               <div className="services-detail-heroForm">
-                <form onSubmit={handleSubmit(onSubmit)}>
-                  {successMsg && <p className="success-msg">{successMsg}</p>}
+                <form onSubmit={handleSubmit(sendData)}>
+                  {successMsg && (
+                    <div className="success-msg">{successMsg}</div>
+                  )}
 
                   <div className="form-control">
-                    <label>{`First Name* ${labelName}`}</label>
+                    <label>First Name*</label>
                     <input
                       type="text"
                       name="firstName"
@@ -124,7 +151,7 @@ export default function ServicesDetail() {
                       name="address"
                       placeholder="Your Address"
                       {...register("address", {
-                        required: "Zip code is required.",
+                        required: "Address is required.",
                       })}
                     />
                     {errors.address && (
@@ -144,25 +171,7 @@ export default function ServicesDetail() {
                   </div>
 
                   <div className="form-control-button">
-                    <label></label>
                     <input type="submit" />
-                    <Button
-                      background-color="#fc5130"
-                      display="flex"
-                      color="white"
-                      flexDirection="column"
-                      justifyContent="center"
-                      fontSize="16px"
-                      textAlign="center"
-                      border="none"
-                      width="125px"
-                      height="60px"
-                      borderRadius="12px"
-                      justifySelf="center"
-                      type="submit"
-                    >
-                      Send Email
-                    </Button>
                   </div>
                 </form>
               </div>
@@ -361,7 +370,7 @@ export default function ServicesDetail() {
             {tempGallery.map((component) => {
               return (
                 <img
-                  src={component.imgSrc}
+                  src={component.filePath}
                   style={{ width: "200px" }}
                   alt="gallery-image"
                 />

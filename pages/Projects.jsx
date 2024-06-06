@@ -68,6 +68,7 @@ export default function Projects() {
           customTransition="all .5"
           transitionDuration={500}
           renderButtonGroupOutside={true}
+          renderDotsOutside={true}
           containerClass="projects-carousel"
           itemClass="projects-carousel-img"
           dotListClass="projects-carousel-dots"
@@ -75,14 +76,15 @@ export default function Projects() {
         >
           {tempGallery.map((component) => {
             return (
-              <div>
+              <div className="projects-image-container">
                 <img
                   src={component.filePath}
                   alt="gallery-image"
                   style={{
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    height: "auto",
+                    height: "100%",
+                    width: "auto",
                   }}
                 />
               </div>

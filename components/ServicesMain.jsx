@@ -164,7 +164,7 @@ export default function ServicesMain() {
             {tempGallery.map((component) => {
               return (
                 <img
-                  src={component.imgSrc}
+                  src={component.filePath}
                   style={{ maxWidth: "100%", objectFit: "cover" }}
                   alt="gallery-image"
                 />
