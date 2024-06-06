@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // git push -u origin main --> pushes local changes to github
 // ***************NEED TO IMPLEMENT********************
 
-// 3. refactor projects photos to be objects with date added, type of job completed, before/after tags
+//
 // 4. add ability to filter photos in projects tab
 // 5. Update color scheme
 
