@@ -27,7 +27,7 @@ export default function Footer() {
           </h3>
           <p>2749 Overcrest St</p>
           <p>Dallas, Texas 75211</p>
-          <p>alberthandymancog@gmail.com</p>
+          <p>albertohandymanco@gmail.com</p>
           <Button
             linkTo="/book-a-handyman"
             background-color="orange"
