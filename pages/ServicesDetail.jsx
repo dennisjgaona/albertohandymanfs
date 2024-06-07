@@ -46,7 +46,7 @@ export default function ServicesDetail() {
       ${data.firstName} ${data.lastName}
       `;
       window.open(
-        `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
+        `mailto:albertohandymanco@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
       );
       reset();
     } else {

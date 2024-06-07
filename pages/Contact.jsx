@@ -65,7 +65,7 @@ export default function Contact() {
       //   `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
       // );
       window.open(
-        `mailto:dennisjgaona@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
+        `mailto:albertohandymanco@gmail.com?cc=${data.email}&subject=${subject}&body=${body}`
       );
 
       reset();
