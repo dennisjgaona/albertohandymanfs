@@ -253,7 +253,7 @@ export const tempGallery = [
   },
   {
     id: 1,
-    filePath: "/public/gallery/gallery_carpenter_fenceRepair_after_1.jpeg",
+    filePath: "/gallery/gallery_carpenter_fenceRepair_after_1.jpeg",
     projType: "carpenter",
     projName: "fenceRepair",
     photoType: "after",
@@ -261,7 +261,7 @@ export const tempGallery = [
   },
   {
     id: 2,
-    filePath: "/public/gallery/gallery_carpenter_roomRepair_after_1.jpeg",
+    filePath: "/gallery/gallery_carpenter_roomRepair_after_1.jpeg",
     projType: "carpenter",
     projName: "roomRepair",
     photoType: "after",
@@ -269,7 +269,7 @@ export const tempGallery = [
   },
   {
     id: 3,
-    filePath: "/public/gallery/gallery_carpenter_fenceRepair_before_1.jpeg",
+    filePath: "/gallery/gallery_carpenter_fenceRepair_before_1.jpeg",
     projType: "carpenter",
     projName: "fenceRepair",
     photoType: "before",
@@ -277,7 +277,7 @@ export const tempGallery = [
   },
   {
     id: 4,
-    filePath: "/public/gallery/gallery_door_doorInstall_after_1.jpeg",
+    filePath: "/gallery/gallery_door_doorInstall_after_1.jpeg",
     projType: "door",
     projName: "doorInstall",
     photoType: "after",
@@ -285,7 +285,7 @@ export const tempGallery = [
   },
   {
     id: 5,
-    filePath: "/public/gallery/gallery_carpenter_roomRepair_before_1.jpeg",
+    filePath: "/gallery/gallery_carpenter_roomRepair_before_1.jpeg",
     projType: "carpenter",
     projName: "roomRepair",
     photoType: "before",
@@ -293,7 +293,7 @@ export const tempGallery = [
   },
   {
     id: 6,
-    filePath: "/public/gallery/gallery_door_doorInstall_before_1.jpeg",
+    filePath: "/gallery/gallery_door_doorInstall_before_1.jpeg",
     projType: "door",
     projName: "doorInstall",
     photoType: "before",
@@ -301,7 +301,7 @@ export const tempGallery = [
   },
   {
     id: 7,
-    filePath: "/public/gallery/gallery_door_doorInstall_after_2.jpeg",
+    filePath: "/gallery/gallery_door_doorInstall_after_2.jpeg",
     projType: "door",
     projName: "doorInstall",
     photoType: "after",
@@ -309,7 +309,7 @@ export const tempGallery = [
   },
   {
     id: 8,
-    filePath: "/public/gallery/gallery_door_doorInstall_before_2.jpeg",
+    filePath: "/gallery/gallery_door_doorInstall_before_2.jpeg",
     projType: "door",
     projName: "doorInstall",
     photoType: "before",
@@ -317,7 +317,7 @@ export const tempGallery = [
   },
   {
     id: 9,
-    filePath: "/public/gallery/gallery_door_sideDoorInstall_after_1.jpeg",
+    filePath: "/gallery/gallery_door_sideDoorInstall_after_1.jpeg",
     projType: "door",
     projName: "sideDoorInstall",
     photoType: "after",
@@ -325,7 +325,7 @@ export const tempGallery = [
   },
   {
     id: 10,
-    filePath: "/public/gallery/gallery_door_sideDoorInstall_before_1.jpeg",
+    filePath: "/gallery/gallery_door_sideDoorInstall_before_1.jpeg",
     projType: "door",
     projName: "sideDoorInstall",
     photoType: "before",
@@ -333,7 +333,7 @@ export const tempGallery = [
   },
   {
     id: 11,
-    filePath: "/public/gallery/gallery_electric_boilerReplacement_after_1.jpeg",
+    filePath: "/gallery/gallery_electric_boilerReplacement_after_1.jpeg",
     projType: "electric",
     projName: "boilerReplacement",
     photoType: "after",
@@ -341,8 +341,7 @@ export const tempGallery = [
   },
   {
     id: 12,
-    filePath:
-      "/public/gallery/gallery_electric_ceilingLightInstall_before_1.jpeg",
+    filePath: "/gallery/gallery_electric_ceilingLightInstall_before_1.jpeg",
     projType: "electric",
     projName: "ceilingLightInstall",
     photoType: "before",
@@ -350,8 +349,7 @@ export const tempGallery = [
   },
   {
     id: 13,
-    filePath:
-      "/public/gallery/gallery_electric_boilerReplacement_before_1.jpeg",
+    filePath: "/gallery/gallery_electric_boilerReplacement_before_1.jpeg",
     projType: "electric",
     projName: "boilerReplacement",
     photoType: "before",
@@ -359,8 +357,7 @@ export const tempGallery = [
   },
   {
     id: 14,
-    filePath:
-      "/public/gallery/gallery_electric_ceilingLightInstall_after_1.jpeg",
+    filePath: "/gallery/gallery_electric_ceilingLightInstall_after_1.jpeg",
     projType: "electric",
     projName: "ceilingLightInstall",
     photoType: "after",
@@ -368,7 +365,7 @@ export const tempGallery = [
   },
   {
     id: 15,
-    filePath: "/public/gallery/gallery_electric_outsideLamp_after_1.jpeg",
+    filePath: "/gallery/gallery_electric_outsideLamp_after_1.jpeg",
     projType: "electric",
     projName: "outsideLamp",
     photoType: "after",
@@ -376,7 +373,7 @@ export const tempGallery = [
   },
   {
     id: 16,
-    filePath: "/public/gallery/gallery_electric_outsideLamp_after_2.jpeg",
+    filePath: "/gallery/gallery_electric_outsideLamp_after_2.jpeg",
     projType: "electric",
     projName: "outsideLamp",
     photoType: "after",
@@ -384,7 +381,7 @@ export const tempGallery = [
   },
   {
     id: 17,
-    filePath: "/public/gallery/gallery_electric_outsidePower_after_1.jpeg",
+    filePath: "/gallery/gallery_electric_outsidePower_after_1.jpeg",
     projType: "electric",
     projName: "outsidePower",
     photoType: "after",
@@ -392,7 +389,7 @@ export const tempGallery = [
   },
   {
     id: 18,
-    filePath: "/public/gallery/gallery_electric_outsidePower_after_2.jpeg",
+    filePath: "/gallery/gallery_electric_outsidePower_after_2.jpeg",
     projType: "electric",
     projName: "outsidePower",
     photoType: "after",
@@ -400,7 +397,7 @@ export const tempGallery = [
   },
   {
     id: 19,
-    filePath: "/public/gallery/gallery_electric_outsideLamp_before_1.jpeg",
+    filePath: "/gallery/gallery_electric_outsideLamp_before_1.jpeg",
     projType: "electric",
     projName: "outsideLamp",
     photoType: "before",
@@ -408,8 +405,7 @@ export const tempGallery = [
   },
   {
     id: 20,
-    filePath:
-      "/public/gallery/gallery_general_christmasDecorFrontDoor_after_1.jpeg",
+    filePath: "/gallery/gallery_general_christmasDecorFrontDoor_after_1.jpeg",
     projType: "general",
     projName: "christmasDecorFrontDoor",
     photoType: "after",
@@ -417,8 +413,7 @@ export const tempGallery = [
   },
   {
     id: 21,
-    filePath:
-      "/public/gallery/gallery_general_christmasDecorFrontDoor_after_2.jpeg",
+    filePath: "/gallery/gallery_general_christmasDecorFrontDoor_after_2.jpeg",
     projType: "general",
     projName: "christmasDecorFrontDoor",
     photoType: "after",
@@ -426,8 +421,7 @@ export const tempGallery = [
   },
   {
     id: 22,
-    filePath:
-      "/public/gallery/gallery_general_christmasDecorFrontDoor_before_1.jpeg",
+    filePath: "/gallery/gallery_general_christmasDecorFrontDoor_before_1.jpeg",
     projType: "general",
     projName: "christmasDecorFrontDoor",
     photoType: "before",
@@ -435,7 +429,7 @@ export const tempGallery = [
   },
   {
     id: 23,
-    filePath: "/public/gallery/gallery_general_foundationRepair_after_1.jpeg",
+    filePath: "/gallery/gallery_general_foundationRepair_after_1.jpeg",
     projType: "general",
     projName: "foundationRepair",
     photoType: "after",
@@ -443,7 +437,7 @@ export const tempGallery = [
   },
   {
     id: 24,
-    filePath: "/public/gallery/gallery_general_foundationRepair_before_1.jpeg",
+    filePath: "/gallery/gallery_general_foundationRepair_before_1.jpeg",
     projType: "general",
     projName: "foundationRepair",
     photoType: "before",
@@ -451,7 +445,7 @@ export const tempGallery = [
   },
   {
     id: 25,
-    filePath: "/public/gallery/gallery_general_outsideWineCool_after_1.jpeg",
+    filePath: "/gallery/gallery_general_outsideWineCool_after_1.jpeg",
     projType: "general",
     projName: "outsideWineCool",
     photoType: "after",
@@ -459,7 +453,7 @@ export const tempGallery = [
   },
   {
     id: 26,
-    filePath: "/public/gallery/gallery_general_vanLogo_after_1.jpeg",
+    filePath: "/gallery/gallery_general_vanLogo_after_1.jpeg",
     projType: "general",
     projName: "vanLogo",
     photoType: "after",
@@ -467,7 +461,7 @@ export const tempGallery = [
   },
   {
     id: 27,
-    filePath: "/public/gallery/gallery_general_stumpRemoval_after_1.jpeg",
+    filePath: "/gallery/gallery_general_stumpRemoval_after_1.jpeg",
     projType: "general",
     projName: "stumpRemoval",
     photoType: "after",
@@ -475,7 +469,7 @@ export const tempGallery = [
   },
   {
     id: 28,
-    filePath: "/public/gallery/gallery_general_outsideWineCool_before_1.jpeg",
+    filePath: "/gallery/gallery_general_outsideWineCool_before_1.jpeg",
     projType: "general",
     projName: "outsideWineCool",
     photoType: "before",
@@ -483,7 +477,7 @@ export const tempGallery = [
   },
   {
     id: 29,
-    filePath: "/public/gallery/gallery_light_lampReplace_after_1.jpeg",
+    filePath: "/gallery/gallery_light_lampReplace_after_1.jpeg",
     projType: "light",
     projName: "lampReplace",
     photoType: "after",
@@ -491,7 +485,7 @@ export const tempGallery = [
   },
   {
     id: 30,
-    filePath: "/public/gallery/gallery_light_lampReplace_before_1.jpeg",
+    filePath: "/gallery/gallery_light_lampReplace_before_1.jpeg",
     projType: "light",
     projName: "lampReplace",
     photoType: "before",
@@ -499,7 +493,7 @@ export const tempGallery = [
   },
   {
     id: 31,
-    filePath: "/public/gallery/gallery_plumbing_sinkMirrorRemodel_after_1.jpeg",
+    filePath: "/gallery/gallery_plumbing_sinkMirrorRemodel_after_1.jpeg",
     projType: "plumbing",
     projName: "sinkMirrorRemodel",
     photoType: "after",
@@ -507,7 +501,7 @@ export const tempGallery = [
   },
   {
     id: 32,
-    filePath: "/public/gallery/gallery_plumbing_sinkMirrorRemodel_after_2.jpeg",
+    filePath: "/gallery/gallery_plumbing_sinkMirrorRemodel_after_2.jpeg",
     projType: "plumbing",
     projName: "sinkMirrorRemodel",
     photoType: "after",
@@ -515,7 +509,7 @@ export const tempGallery = [
   },
   {
     id: 33,
-    filePath: "/public/gallery/gallery_plumbing_sinkMirrorRemodel_after_3.jpeg",
+    filePath: "/gallery/gallery_plumbing_sinkMirrorRemodel_after_3.jpeg",
     projType: "plumbing",
     projName: "sinkMirrorRemodel",
     photoType: "after",
@@ -523,8 +517,7 @@ export const tempGallery = [
   },
   {
     id: 34,
-    filePath:
-      "/public/gallery/gallery_plumbing_sinkMirrorRemodel_before_1.jpeg",
+    filePath: "/gallery/gallery_plumbing_sinkMirrorRemodel_before_1.jpeg",
     projType: "plumbing",
     projName: "sinkMirrorRemodel",
     photoType: "before",
@@ -532,7 +525,7 @@ export const tempGallery = [
   },
   {
     id: 35,
-    filePath: "/public/gallery/gallery_tile_tileReplace_before_1.jpeg",
+    filePath: "/gallery/gallery_tile_tileReplace_before_1.jpeg",
     projType: "tile",
     projName: "tileReplace",
     photoType: "before",
@@ -540,7 +533,7 @@ export const tempGallery = [
   },
   {
     id: 36,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_after_1.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_after_1.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "after",
@@ -548,7 +541,7 @@ export const tempGallery = [
   },
   {
     id: 37,
-    filePath: "/public/gallery/gallery_tile_tileReplace_after_1.jpeg",
+    filePath: "/gallery/gallery_tile_tileReplace_after_1.jpeg",
     projType: "tile",
     projName: "tileReplace",
     photoType: "after",
@@ -556,7 +549,7 @@ export const tempGallery = [
   },
   {
     id: 38,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_after_3.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_after_3.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "after",
@@ -564,7 +557,7 @@ export const tempGallery = [
   },
   {
     id: 39,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_before_3.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_before_3.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "before",
@@ -572,7 +565,7 @@ export const tempGallery = [
   },
   {
     id: 40,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_before_2.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_before_2.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "before",
@@ -580,7 +573,7 @@ export const tempGallery = [
   },
   {
     id: 41,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_after_2.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_after_2.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "after",
@@ -588,7 +581,7 @@ export const tempGallery = [
   },
   {
     id: 42,
-    filePath: "/public/gallery/gallery_tiles_showerUpgrade_before_1.jpeg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_before_1.jpeg",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "before",
@@ -596,7 +589,7 @@ export const tempGallery = [
   },
   {
     id: 43,
-    filePath: "/public/gallery/gallery_window_safetyBar_after_1.jpeg",
+    filePath: "/gallery/gallery_window_safetyBar_after_1.jpeg",
     projType: "window",
     projName: "safetyBar",
     photoType: "after",
@@ -604,7 +597,7 @@ export const tempGallery = [
   },
   {
     id: 44,
-    filePath: "/public/gallery/gallery_window_safetyBar_after_2.jpeg",
+    filePath: "/gallery/gallery_window_safetyBar_after_2.jpeg",
     projType: "window",
     projName: "safetyBar",
     photoType: "after",
@@ -612,8 +605,7 @@ export const tempGallery = [
   },
   {
     id: 45,
-    filePath:
-      "/public/gallery/gallery_plumbing_sinkMirrorRemodel_before_2.jpeg",
+    filePath: "/gallery/gallery_plumbing_sinkMirrorRemodel_before_2.jpeg",
     projType: "plumbing",
     projName: "sinkMirrorRemodel",
     photoType: "before",
@@ -621,7 +613,7 @@ export const tempGallery = [
   },
   {
     id: 46,
-    filePath: "/public/gallery/gallery_window_safetyBar_after_3.jpeg",
+    filePath: "/gallery/gallery_window_safetyBar_after_3.jpeg",
     projType: "window",
     projName: "safetyBar",
     photoType: "after",
@@ -629,7 +621,7 @@ export const tempGallery = [
   },
   {
     id: 47,
-    filePath: "/public/gallery/gallery_window_safetyBar_after_4.jpeg",
+    filePath: "/gallery/gallery_window_safetyBar_after_4.jpeg",
     projType: "window",
     projName: "safetyBar",
     photoType: "after",
@@ -637,7 +629,7 @@ export const tempGallery = [
   },
   {
     id: 48,
-    filePath: "/public/gallery/gallery_window_safetyBar_before_1.jpeg",
+    filePath: "/gallery/gallery_window_safetyBar_before_1.jpeg",
     projType: "window",
     projName: "safetyBar",
     photoType: "before",
@@ -645,7 +637,7 @@ export const tempGallery = [
   },
   {
     id: 49,
-    filePath: "/public/gallery/gallery_window_windowUpgrade_after_1.jpeg",
+    filePath: "/gallery/gallery_window_windowUpgrade_after_1.jpeg",
     projType: "window",
     projName: "windowUpgrade",
     photoType: "after",
@@ -653,7 +645,7 @@ export const tempGallery = [
   },
   {
     id: 50,
-    filePath: "/public/gallery/gallery_window_windowUpgrade_before_1.jpeg",
+    filePath: "/gallery/gallery_window_windowUpgrade_before_1.jpeg",
     projType: "window",
     projName: "windowUpgrade",
     photoType: "before",
@@ -661,7 +653,7 @@ export const tempGallery = [
   },
   {
     id: 51,
-    filePath: "/public/gallery/gallery_window_windowUpgrade_before_2.jpeg",
+    filePath: "/gallery/gallery_window_windowUpgrade_before_2.jpeg",
     projType: "window",
     projName: "windowUpgrade",
     photoType: "before",
@@ -669,7 +661,7 @@ export const tempGallery = [
   },
   {
     id: 52,
-    filePath: "/public/gallery/gallery_electric_outsidePower_before_1.jpeg",
+    filePath: "/gallery/gallery_electric_outsidePower_before_1.jpeg",
     projType: "electric",
     projName: "outsidePower",
     photoType: "before",
@@ -677,7 +669,7 @@ export const tempGallery = [
   },
   {
     id: 53,
-    filePath: "/public/gallery/gallery_window_windowUpgrade_after_3.jpeg",
+    filePath: "/gallery/gallery_window_windowUpgrade_after_3.jpeg",
     projType: "window",
     projName: "windowUpgrade",
     photoType: "after",
@@ -685,7 +677,7 @@ export const tempGallery = [
   },
   {
     id: 54,
-    filePath: "/public/gallery/gallery_window_windowUpgrade_after_2.jpeg",
+    filePath: "/gallery/gallery_window_windowUpgrade_after_2.jpeg",
     projType: "window",
     projName: "windowUpgrade",
     photoType: "after",
