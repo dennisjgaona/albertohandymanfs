@@ -57,7 +57,7 @@ export default function Projects() {
         <Carousel
           swipeable={false}
           slidesToSlide={1}
-          draggable={false}
+          draggable={true}
           showDots={true}
           responsive={responsive}
           ssr={false} // means to render carousel on server-side.

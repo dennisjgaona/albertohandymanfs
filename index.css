@@ -1246,8 +1246,8 @@ footer {
     justify-items: center;
   }
   .projects-image-container {
-    width: 600px;
-    height: 600px;
+    width: 95vw;
+    height: 95vw;
   }
   .review-tile-review {
     flex-direction: column;
@@ -1392,6 +1392,7 @@ footer {
   }
   .projects-carousel-dots {
     padding-top: 10vh;
+    width: 85vw;
   }
   .validation-projects {
     flex-direction: column;
@@ -1427,5 +1428,7 @@ footer {
     margin: auto;
     grid-template-columns: 1fr 1fr;
     padding-left: 5vw;
+    padding-bottom: 5vw;
+    padding-right: 5vw;
   }
 }

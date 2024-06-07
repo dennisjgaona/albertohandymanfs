@@ -27,7 +27,7 @@ export default function Footer() {
           </h3>
           <p>2749 Overcrest St</p>
           <p>Dallas, Texas 75211</p>
-          <p>albertog@gmail.com</p>
+          <p>alberthandymancog@gmail.com</p>
           <Button
             linkTo="/book-a-handyman"
             background-color="orange"
@@ -61,7 +61,7 @@ export default function Footer() {
             marginRight="20px"
             marginTop="20px"
             marginBottom="20px"
-          >{`(214)214-2142`}</Button>
+          >{`(469)544-0932`}</Button>
         </div>
         <div className="footer-col2">
           <h3
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
           <div style={{ marginBottom: "20px" }}>
             <img
-              src="../src/assets/nextdoor.png"
+              src="../public/webImages/nextdoor.png"
               alt="nextdoor review"
               width={100}
             />
@@ -119,7 +119,7 @@ export default function Footer() {
             </IconContext.Provider>
 
             <img
-              src="../src/assets/nextdooricon.png"
+              src="../public/webImages/nextdooricon.png"
               alt="nextdoor icon"
               style={{ width: "30px", height: "30px" }}
             />

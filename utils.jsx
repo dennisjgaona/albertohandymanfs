@@ -199,43 +199,43 @@ export const whyUsComp = [
 
 export const reviewComp = [
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "Alberto transformed my garden into a paradise! He planted colorful flowers, trimmed the bushes, and installed a beautiful water feature. His attention to detail is unmatched. I couldn't be happier!",
     name: "Sophia Adams",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "I hired Alberto's HandyMan Co. to renovate my kitchen, and they did an outstanding job. From installing new cabinets to updating the lighting fixtures, everything was done professionally and within the timeframe. Highly recommended!",
     name: "David Miller",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "Alberto fixed my leaky roof during a stormy night. His prompt response and efficient repair saved my house from potential water damage. I'm extremely grateful for his quick and reliable service!",
     name: "Linda Johnson",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "I called Alberto to repair my faulty electrical wiring. He diagnosed the issue swiftly and fixed it with precision. Now, my home's electrical system works perfectly. Alberto's HandyMan Co. is my go-to for all repairs!",
     name: "John Anderson",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "Alberto's team painted the exterior of my house flawlessly. They paid attention to every detail, ensuring a smooth and even finish. The transformation is amazing, and I've received numerous compliments from my neighbors. Thank you, Alberto!",
     name: "Maria Gonzalez",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "I had a plumbing emergency, and Alberto came to the rescue! He fixed the burst pipe in my basement quickly and efficiently, preventing further water damage. Alberto's HandyMan Co. provides top-notch service, and I highly recommend them!",
     name: "William Parker",
   },
   {
-    imgSrc: "src/assets/nextdoor.png",
+    imgSrc: "/webImages/nextdoor.png",
     description:
       "Alberto assembled my new furniture with precision and care. He worked diligently, ensuring each piece was put together perfectly. I'm impressed with his skills and professionalism. Alberto's HandyMan Co. is the best in town!",
     name: "Emily Carter",

@@ -386,7 +386,7 @@ export default function Home() {
             Give Alberto's HandyMan a call for a free consultation.
           </h3>
           <Button
-            linkTo="/book-a-handyman"
+            linkTo="/projects"
             background-color="#30bced"
             display="flex"
             color="white"
