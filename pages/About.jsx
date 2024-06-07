@@ -21,7 +21,7 @@ export default function About() {
             <h3
               style={{ fontSize: "2.5rem", fontWeight: "bolder", margin: "0" }}
             >
-              Alberto LastName
+              Alberto Martinez
             </h3>
             <h4 style={{ fontSize: "1rem", fontWeight: "bold", margin: "0" }}>
               I am the founder of Alberto's Handyman Co.
@@ -67,7 +67,7 @@ export default function About() {
           </div>
           <div className="about-description-image">
             <img
-              src="https://schaferbr.com/wp-content/uploads/2016/09/shutterstock_54654790.jpg"
+              src="/gallery/gallery_light_lampReplace_before_1.jpeg"
               alt="Alberto's Image Goes Here"
             ></img>
           </div>

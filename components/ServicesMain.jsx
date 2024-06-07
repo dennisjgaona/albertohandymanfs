@@ -64,7 +64,7 @@ export default function ServicesMain() {
           </div>
         </div>
         <div className="servicesPage-heroRight">
-          <img src="../src/assets/handymanServicesHero.jpg"></img>
+          <img src="/webImages/handymanServicesHero.jpg"></img>
         </div>
       </div>
       <div className="services-allServices">

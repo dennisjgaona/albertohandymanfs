@@ -47,7 +47,7 @@ export default function Footer() {
             Book a handyman
           </Button>
           <Button
-            linkTo="/book-a-handyman"
+            linkTo="tel:4695440932"
             border="3px solid coral"
             display="flex"
             color="black"
@@ -61,7 +61,7 @@ export default function Footer() {
             marginRight="20px"
             marginTop="20px"
             marginBottom="20px"
-          >{`(469)544-0932`}</Button>
+          >{`(469) 544-0932`}</Button>
         </div>
         <div className="footer-col2">
           <h3
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
           <div style={{ marginBottom: "20px" }}>
             <img
-              src="../public/webImages/nextdoor.png"
+              src="/webImages/nextdoor.png"
               alt="nextdoor review"
               width={100}
             />
@@ -119,7 +119,7 @@ export default function Footer() {
             </IconContext.Provider>
 
             <img
-              src="../public/webImages/nextdooricon.png"
+              src="/webImages/nextdooricon.png"
               alt="nextdoor icon"
               style={{ width: "30px", height: "30px" }}
             />

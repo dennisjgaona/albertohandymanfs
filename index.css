@@ -1416,7 +1416,8 @@ footer {
     padding: 3vh 0 15vh 0;
   }
   .contact-form-container {
-    width: 85vw;
+    width: 95vw;
+    padding: 15px;
   }
   .contact-form > form {
     grid-template-columns: 1fr;

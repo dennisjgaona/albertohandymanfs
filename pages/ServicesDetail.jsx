@@ -215,7 +215,7 @@ export default function ServicesDetail() {
             it, free of charge.
           </p>
           <Button
-            linkTo="/book-a-handyman"
+            linkTo="tel:4695440932"
             background-color="blue  "
             display="flex"
             color="white"
@@ -230,7 +230,7 @@ export default function ServicesDetail() {
             marginRight="20px"
             marginTop="20px"
           >
-            (214) 214-2142
+            (469) 544-0932
           </Button>
         </div>
         <div className="services-detail-single-impress-list">
@@ -307,7 +307,7 @@ export default function ServicesDetail() {
           <h3>Check out</h3>
           <h2>Our Latest Projects!</h2>
           <Button
-            linkTo="/book-a-handyman"
+            linkTo="/projects"
             background-color="#30bced"
             display="flex"
             color="white"

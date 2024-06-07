@@ -114,7 +114,7 @@ export default function Header() {
             </li>
             <li>
               <Button
-                linkTo="/book-a-handyman"
+                linkTo="tel:4695440932"
                 background-color="orange"
                 display="flex"
                 color="white"
@@ -128,7 +128,7 @@ export default function Header() {
                 borderRadius="12px"
                 justifySelf="center"
               >
-                214-444-4444
+                {`(469) 544-0932`}
               </Button>
             </li>
             <li></li>
