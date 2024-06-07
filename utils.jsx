@@ -245,7 +245,7 @@ export const reviewComp = [
 export const tempGallery = [
   {
     id: 0,
-    filePath: "public/assets/gallery/gallery_AC_ACRepair_after_1.jpeg",
+    filePath: "/gallery/gallery_AC_ACRepair_after_1.jpeg",
     projType: "AC",
     projName: "ACRepair",
     photoType: "after",
