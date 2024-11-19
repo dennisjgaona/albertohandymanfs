@@ -415,9 +415,11 @@ footer {
   display: grid;
   background-color: #1c6b88;
   padding: 5%;
-
   justify-content: right;
   color: white;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
 .projects-left > pre {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -1043,20 +1045,25 @@ footer {
 }
 .about-description-main {
   display: flex;
+  flex-direction: column;
   width: 45vw;
   margin: auto;
+  text-align: center;
+  align-items: center;
+  row-gap: 5vh;
 }
 .about-description-letters {
-  flex: 2;
+  flex: 1;
 
   padding: 0 3vw;
 }
 .about-description-image {
   width: 40%;
+  align-content: center;
 }
 .about-description-image > img {
-  height: 100%;
   width: 100%;
+  border-radius: 50%;
 }
 .validation-about {
   display: flex;

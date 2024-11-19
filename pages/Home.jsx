@@ -310,23 +310,25 @@ export default function Home() {
           <Carousel
             swipeable={true}
             draggable={true}
-            showDots={true}
+            showDots={false}
             responsive={{
               superLargeDesktop: {
                 // the naming can be any, depends on you.
                 breakpoint: { max: 4000, min: 3000 },
-                items: 4,
-                partialVisibilityGutter: 40,
+                items: 3,
+                partialVisibilityGutter: 10,
               },
               desktop: {
                 breakpoint: { max: 3000, min: 1024 },
-                items: 4,
-                partialVisibilityGutter: 40,
+                items: 3,
+                partialVisibilityGutter: 10,
               },
               tablet: {
                 breakpoint: { max: 1024, min: 464 },
                 items: 3,
-                partialVisibilityGutter: 30,
+                centerSlidePercentage: 90,
+                swipeable: true,
+                draggable: true,
               },
               mobile: {
                 breakpoint: { max: 464, min: 0 },
@@ -347,7 +349,6 @@ export default function Home() {
             transitionDuration={500}
             containerClass="carousel-container-projects"
             removeArrowOnDeviceType={["tablet", "mobile"]}
-            dotListClass="custom-dot-list-style-projects"
             itemClass="carousel-item-projects"
             partialVisible={true}
           >

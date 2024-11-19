@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { tempGallery, validationComp } from "../utils";
 import ValidationComponent from "../components/ValidationComponent";
 import Button from "../components/Button";
+//import { useSearchParams } from "react-router-dom";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,6 +27,9 @@ const responsive = {
 };
 
 const images = tempGallery.map((component) => {
+  //const [searchParams, setSearchParams] = useSearchParams();
+
+  //const category = searchParams.get("category");
   return (
     <div>
       <img src={component.filePath} alt="gallery-image" />

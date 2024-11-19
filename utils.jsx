@@ -685,7 +685,7 @@ export const tempGallery = [
   },
   {
     id: 55,
-    filePath: "/gallery_carpentry_outsideWindowRemodel_after_1.jpg",
+    filePath: "/gallery/gallery_carpentry_outsideWindowRemodel_after_1.webp",
     projType: "carpentry",
     projName: "outsideWindowRemodel",
     photoType: "after",
@@ -693,7 +693,7 @@ export const tempGallery = [
   },
   {
     id: 56,
-    filePath: "/gallery_carpentry_outsideWindowRemodel_before_1.jpg",
+    filePath: "/gallery/gallery_carpentry_outsideWindowRemodel_before_1.webp",
     projType: "carpentry",
     projName: "outsideWindowRemodel",
     photoType: "before",
@@ -701,7 +701,7 @@ export const tempGallery = [
   },
   {
     id: 57,
-    filePath: "/gallery_carpentry_outsideWindowRemodel_before_2.jpg",
+    filePath: "/gallery/gallery_carpentry_outsideWindowRemodel_before_2.webp",
     projType: "carpentry",
     projName: "outsideWindowRemodel",
     photoType: "before",
@@ -709,7 +709,7 @@ export const tempGallery = [
   },
   {
     id: 58,
-    filePath: "/gallery_carpentry_roofAwningRepair_after_1.jpg",
+    filePath: "/gallery/gallery_carpentry_roofAwningRepair_after_1.webp",
     projType: "carpentry",
     projName: "roofAwningRepair",
     photoType: "after",
@@ -717,7 +717,7 @@ export const tempGallery = [
   },
   {
     id: 59,
-    filePath: "/gallery_carpentry_roofAwningRepair_after_2.jpg",
+    filePath: "/gallery/gallery_carpentry_roofAwningRepair_after_2.webp",
     projType: "carpentry",
     projName: "roofAwningRepair",
     photoType: "after",
@@ -725,7 +725,7 @@ export const tempGallery = [
   },
   {
     id: 60,
-    filePath: "/gallery_carpentry_roofAwningRepair_before_1.jpg",
+    filePath: "/gallery/gallery_carpentry_roofAwningRepair_before_1.webp",
     projType: "carpentry",
     projName: "roofAwningRepair",
     photoType: "before",
@@ -733,7 +733,7 @@ export const tempGallery = [
   },
   {
     id: 61,
-    filePath: "/gallery_caulk_showerLeak_after_1.jpg",
+    filePath: "/gallery/gallery_caulk_showerLeak_after_1.webp",
     projType: "caulk",
     projName: "showerLeak",
     photoType: "after",
@@ -741,7 +741,7 @@ export const tempGallery = [
   },
   {
     id: 62,
-    filePath: "/gallery_caulk_showerLeak_before_1.jpg",
+    filePath: "/gallery/gallery_caulk_showerLeak_before_1.webp",
     projType: "caulk",
     projName: "showerLeak",
     photoType: "before",
@@ -749,7 +749,7 @@ export const tempGallery = [
   },
   {
     id: 63,
-    filePath: "/gallery_door_doorInstall_after_1.jpg",
+    filePath: "/gallery/gallery_door_doorInstall_after_1.webp",
     projType: "door",
     projName: "doorInstall",
     photoType: "after",
@@ -757,7 +757,7 @@ export const tempGallery = [
   },
   {
     id: 64,
-    filePath: "/gallery_door_doorInstall_before_1.jpg",
+    filePath: "/gallery/gallery_door_doorInstall_before_1.webp",
     projType: "door",
     projName: "doorInstall",
     photoType: "before",
@@ -765,7 +765,7 @@ export const tempGallery = [
   },
   {
     id: 65,
-    filePath: "/gallery_electrical_porchCeilingFan_after_1.jpg",
+    filePath: "/gallery/gallery_electrical_porchCeilingFan_after_1.webp",
     projType: "electrical",
     projName: "porchCeilingFan",
     photoType: "after",
@@ -773,7 +773,7 @@ export const tempGallery = [
   },
   {
     id: 66,
-    filePath: "/gallery_electrical_porchCeilingFan_before_1.jpg",
+    filePath: "/gallery/gallery_electrical_porchCeilingFan_before_1.webp",
     projType: "electrical",
     projName: "porchCeilingFan",
     photoType: "before",
@@ -781,7 +781,7 @@ export const tempGallery = [
   },
   {
     id: 67,
-    filePath: "/gallery_light_lampReplace2_after_1.jpg",
+    filePath: "/gallery/gallery_light_lampReplace2_after_1.webp",
     projType: "light",
     projName: "lampReplace2",
     photoType: "after",
@@ -789,7 +789,7 @@ export const tempGallery = [
   },
   {
     id: 68,
-    filePath: "/gallery_light_lampReplace2_after_2.jpg",
+    filePath: "/gallery/gallery_light_lampReplace2_after_2.webp",
     projType: "light",
     projName: "lampReplace2",
     photoType: "after",
@@ -797,7 +797,7 @@ export const tempGallery = [
   },
   {
     id: 69,
-    filePath: "/gallery_light_lampReplace2_before_1.jpg",
+    filePath: "/gallery/gallery_light_lampReplace2_before_1.webp",
     projType: "light",
     projName: "lampReplace2",
     photoType: "before",
@@ -805,7 +805,7 @@ export const tempGallery = [
   },
   {
     id: 70,
-    filePath: "/gallery_plumbing_outsideFaucetRepair_after_1.jpg",
+    filePath: "/gallery/gallery_plumbing_outsideFaucetRepair_after_1.webp",
     projType: "plumbing",
     projName: "outsideFaucetRepair",
     photoType: "after",
@@ -813,7 +813,7 @@ export const tempGallery = [
   },
   {
     id: 71,
-    filePath: "/gallery_plumbing_outsideFaucetRepair_before_1.jpg",
+    filePath: "/gallery/gallery_plumbing_outsideFaucetRepair_before_1.webp",
     projType: "plumbing",
     projName: "outsideFaucetRepair",
     photoType: "before",
@@ -821,7 +821,7 @@ export const tempGallery = [
   },
   {
     id: 72,
-    filePath: "/gallery_tiles_showerUpgrade_after_4.jpg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_after_4.webp",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "after",
@@ -829,7 +829,7 @@ export const tempGallery = [
   },
   {
     id: 73,
-    filePath: "/gallery_tiles_showerUpgrade_before_3.jpg",
+    filePath: "/gallery/gallery_tiles_showerUpgrade_before_3.webp",
     projType: "tiles",
     projName: "showerUpgrade",
     photoType: "before",

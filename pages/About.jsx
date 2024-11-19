@@ -15,7 +15,14 @@ export default function About() {
 
           <h1>About Alberto's HandyMan Co.</h1>
         </div>
+
         <div className="about-description-main">
+          <div className="about-description-image">
+            <img
+              src="/gallery/gallery_light_lampReplace_before_1.jpeg"
+              alt="Alberto's Image Goes Here"
+            ></img>
+          </div>
           <div className="about-description-letters">
             <h2 style={{ fontSize: "1.5rem", margin: "0" }}>My Name is</h2>
             <h3
@@ -64,12 +71,6 @@ export default function About() {
               exceed compliance requirements of local and state regulations,
               trade certifications, apprenticeships, and permits.
             </p>
-          </div>
-          <div className="about-description-image">
-            <img
-              src="/gallery/gallery_light_lampReplace_before_1.jpeg"
-              alt="Alberto's Image Goes Here"
-            ></img>
           </div>
         </div>
       </div>
