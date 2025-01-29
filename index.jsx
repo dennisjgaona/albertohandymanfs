@@ -13,6 +13,10 @@ import ServicesMain from "./components/ServicesMain";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import { AuthProvider } from "./src/hooks/useAuth";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +27,15 @@ const router = createBrowserRouter(
       <Route path="/book-a-handyman" element={<Contact />} />
       <Route path="projects" element={<Projects />} />
       <Route path="about" element={<About />} />
+      <Route path="login" element={<Login />} />
+      <Route
+        path="admin"
+        element={
+          <ProtectedRoute>
+            <Admin />
+          </ProtectedRoute>
+        }
+      />
     </Route>
   )
 );
