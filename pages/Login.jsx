@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../src/hooks/useAuth";
+import useAuth from "../src/hooks/useAuth";
 
 export default function Login() {
   const [username, setUsername] = useState("");
