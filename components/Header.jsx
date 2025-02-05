@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import LangButton from "./LangButton";
-import { ContextLang } from "./Layout";
+//import LangButton from "./LangButton";
+//import { ContextLang } from "./Layout";
 import Button from "./Button";
 import Logo from "../src/assets/Logo";
 
@@ -49,7 +49,8 @@ const Hamburger = () => {
 };
 
 export default function Header() {
-  const { lang } = useContext(ContextLang);
+  //const { lang } = useContext(ContextLang);
+  const lang = true; // set to english until further implementation
   const [showNavbar, setShowNavbar] = useState(false);
 
   function handleShowNavbar() {
