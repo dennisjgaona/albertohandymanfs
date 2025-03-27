@@ -12,24 +12,41 @@ import {
   Checkbox,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+  const { userLoggedIn } = useAuth();
   const { login } = useAuth();
+
+  const auth = getAuth();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     console.log(e);
-    // Here you would usually send a request to your backend to authenticate the user
-    // For the sake of this example, we're using a mock authentication
-    if (username === "user" && password === "password") {
-      // Replace with actual authentication logic
-      await login({ username });
-    } else {
-      alert("Invalid username or password");
-    }
+    //FIREBASE FUNCTIONS
+    await signInWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        // Signed in
+
+        const user = userCredential.user;
+        login(user);
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert("Error Code" + errorCode + ": " + errorMessage);
+      });
+    // END FIREBASE FUNCTIONS
+
+    //   if (username === "user" && password === "password") {
+    //     // Replace with actual authentication logic
+    //     await login({ username });
+    //   } else {
+    //     alert("Invalid username or password");
+    //   }
   };
 
   return (
